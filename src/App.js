@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import Home from './Pages/Home/Home';
 import About from './Pages/About/About';
+import Galary from './Pages/Galary/Galary';
 function App() {
   return (
     <div className="App">
@@ -20,6 +21,10 @@ function App() {
       <Route
         path="/"
         element={<Home />}
+      />
+      <Route
+        path="/galary"
+        element={<Galary />}
       />
       <Route
         path="/home"
