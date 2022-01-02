@@ -1,0 +1,16 @@
+.footer-bottom {
+    color: white;
+    padding: 35px;
+
+}
+
+.upper-footer {
+    background-color: #121a22;
+    color: white;
+
+}
+
+.addition-bg {
+    background-image: url(../../../team-project-img/bg-footer1.jpg);
+    background-size: cover;
+}

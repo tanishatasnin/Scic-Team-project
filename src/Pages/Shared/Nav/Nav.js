@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Nav.css';
 
 const Nav = () => {
@@ -12,15 +13,15 @@ const Nav = () => {
                         <input type="radio" name="slider" id="close-btn" />
                         <ul className="nav-links">
                             <label for="close-btn" className="btn close-btn"><i className="fas fa-times"></i></label>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Products</a></li>
+                            <li><Link to="/home">Home</Link></li>
+                            <li><Link to="/home">Products</Link></li>
 
                             <li>
                                 <a href="#" className="desktop-item">Dropdown Menu</a>
                                 <input type="checkbox" id="showDrop" />
                                 <label for="showDrop" className="mobile-item">Dropdown Menu</label>
                                 <ul className="drop-menu">
-                                    <li><a href="#">Drop menu 1</a></li>
+                                    <li><Link to="/galary">Gallery</Link></li>
                                     <li><a href="#">Drop menu 2</a></li>
                                     <li><a href="#">Drop menu 3</a></li>
                                     <li><a href="#">Drop menu 4</a></li>
@@ -65,8 +66,8 @@ const Nav = () => {
                                     </div>
                                 </div>
                             </li>
-                            <li><a href="#">Blogs</a></li>
-                            <li><a href="#">About</a></li>
+                            <li><Link to="/home">Blogs</Link></li>
+                            <li><Link to="/about">About</Link></li>
                         </ul>
                         <label for="menu-btn" className="btn menu-btn"><i className="fas fa-bars"></i></label>
                     </div>
