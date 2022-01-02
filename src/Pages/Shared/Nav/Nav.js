@@ -59,7 +59,7 @@ const Nav = () => {
                                             <ul className="mega-links">
                                                 <li><a href="#">Site Seal</a></li>
                                                 <li><a href="#">VPS Hosting</a></li>
-                                                <li><a href="#">Privacy Seal</a></li>
+                                                g<li><a href="#">Privacy Seal</a></li>
                                                 <li><a href="#">Website design</a></li>
                                             </ul>
                                         </div>
