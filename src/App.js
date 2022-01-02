@@ -11,6 +11,8 @@ import {
 import Home from './Pages/Home/Home';
 import About from './Pages/About/About';
 import Galary from './Pages/Galary/Galary';
+import Exp from './Pages/Exp/Exp';
+import Plants from './Pages/Plants/Plants';
 function App() {
   return (
     <div className="App">
@@ -25,6 +27,14 @@ function App() {
       <Route
         path="/galary"
         element={<Galary />}
+      />
+      <Route
+        path="/services"
+        element={<Plants />}
+      />
+      <Route
+        path="/exp"
+        element={<Exp />}
       />
       <Route
         path="/home"
