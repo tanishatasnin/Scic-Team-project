@@ -1,0 +1,58 @@
+[
+               {
+                     "name":"Rubber Tree"  ,
+                     "image":"https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1623167514-small-plant-ficus-rosewood-pot_2048x.jpg?crop=1.00xw:0.843xh;0,0.157xh&resize=768:* ",
+                     "about":"Some people don't like the boho chic vibe of extremely leafy plants, and if you're one of them, you'll love this compact rubber tree. It needs plenty of bright light and likes to have lots of empty space around it ",
+                     "price":49,
+                     "title": "BEST HIGH LIGHT INDOOR PLANT",
+                     "tags": " Beautiful / Indoor / Outdoor"       
+               },
+               {
+                      "name":"Aloe Vera",
+                      "image":"https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1619452806-31I2HHUKTXL._SL500_.jpg?crop=1xw:1.00xh;center,top&resize=768:*",
+                      "about":"Also called ,The Healer Plant, aloe vera is the ultimate multitasker. Not only will it brighten up your home, but you can also use it in your skincare routine. It's super low maintenance—simply keep in a bright, sunny spot to keep it alive",
+                      "price":16.79 ,
+                      "title":"BEST INDOOR MULTITASKING PLANT",
+                      "tags":" Beautiful / Indoor / Outdoor"        
+               },
+               {
+                              "name":"Peace Lily",
+                              "image":"https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1551638497-51m6Fl9XFvL.jpg?crop=1.00xw:0.944xh;0,0.0240xh&resize=768:*",
+                              "about":"If you have experience keeping indoor plants alive (congrats!), it may be time to add a peace lily to your house plant mix. They require just a little bit more TLC—just ensure the soil is moist (not soggy) at all times, and you’ll have beautiful, blooming lilies in no time.",
+                              "price":30,
+                              "title":"BEST INDOOR FLOWERING PLANT",
+                              "tags":" Beautiful / Indoor / Outdoor"        
+                       },
+                       {
+                              "name":"ZZ Plant",
+                              "image":"https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1551638261-gallery_the-sill_zz-plant-plant_3_4_7fcfbb35-419e-42d3-8cb5-3d7f8295312b_2230x.progressive.jpg?crop=1.00xw:0.772xh;0,0&resize=768:*",
+                              "about":"The ZZ plant is amazing since its drought tolerant. In some cultures, it's believed that this plant invites friendship and prosperity to the space it's in, making it an amazing housewarming gift.",
+                              "price":44,
+                              "title":"BEST HOUSEWARMING INDOOR PLANT GIFT",
+                              "tags":" Beautiful / Indoor / Outdoor"        
+                       },
+                       {
+                              "name":"Snake Plant",
+                              "image": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1623167101-the-sill_snake-plant-laurentii_variant_medium_grant_blush_1440x.jpg?crop=1.00xw:0.968xh;0,0.0112xh&resize=768:*",
+                              "about":"Tend to kill any flowers your friends buy you within a couple of days? I hear ya. Snake plants are a low-maintenance plant known for surviving droughts, making them perfect for newbies living in almost any environment.  ",
+                              "price":20,
+                              "title":"BEST LOW-MAINTENANCE INDOOR PLANT",
+                              "tags":" Beautiful / Indoor / Outdoor"        
+                       },
+                       {
+                              "name":"Dracaena Gold Star",
+                              "image":"https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1623167350-screen-shot-2021-06-08-at-11-48-38-am-1623167334.png?crop=0.803xw:1.00xh;0.146xw,0&resize=768:*",
+                              "about":"Another easy-going, low-maintenance plant, the Dracaena Gold Star can easily adapt to a wide range of low to high light environments. It's an easy, fun way to dress up that awkward empty corner in your space by (literally) putting some life in it.",
+                              "price":15,
+                              "title":"BEST LARGE INDOOR PLANT",
+                              "tags":" Beautiful / Indoor / Outdoor"        
+                       },
+                       {
+                              "name":"Monstera Deliciosa",
+                              "image":"https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1637010742-the-sill_monstera_variant_medium_grant_black_587b36b4-4304-47f4-924e-b0bb4dfb0090_1440x.jpg?crop=1xw:1xh;center,top&resize=768:*",
+                              "about":"You've probably seen a lot of these trendy monstera deliciosa (say that three times fast!) plants all over Insta and at your trendy friend's apartment, because they give off tropical vibes no matter where you are. Simply water it every two weeks and you're set to go.",
+                              "price":12,
+                              "title":"BEST TRENDY INDOOR PLANT",
+                              "tags":" Beautiful / Indoor / Outdoor"        
+                       }
+]

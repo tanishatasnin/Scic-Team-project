@@ -13,6 +13,7 @@ import About from './Pages/About/About';
 import Galary from './Pages/Galary/Galary';
 import Exp from './Pages/Exp/Exp';
 import Plants from './Pages/Plants/Plants';
+import Allproduct from './Pages/Plants/Allproduct/Allproduct';
 function App() {
   return (
     <div className="App">
@@ -31,6 +32,10 @@ function App() {
       <Route
         path="/services"
         element={<Plants />}
+      />
+      <Route
+        path="/allplants/:productId"
+        element={<Allproduct/>}
       />
       <Route
         path="/exp"
