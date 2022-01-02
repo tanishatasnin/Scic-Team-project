@@ -1,7 +1,9 @@
 import {
+  createUserWithEmailAndPassword,
   getAuth,
   GoogleAuthProvider,
   onAuthStateChanged,
+  signInWithEmailAndPassword,
   signInWithPopup,
   signOut,
 } from "firebase/auth";
@@ -21,6 +23,16 @@ const useFirebase = () => {
     setIsLoading(true);
     const googleProvider = new GoogleAuthProvider();
     return signInWithPopup(auth, googleProvider);
+  };
+
+  const userRegister = (email, password) => {
+    setIsLoading(true);
+    return createUserWithEmailAndPassword(auth, email, password);
+  };
+
+  const userSignIn = (email, password) => {
+    setIsLoading(true);
+    return signInWithEmailAndPassword(auth, email, password);
   };
 
   const logOut = () => {
@@ -56,6 +68,8 @@ const useFirebase = () => {
     signInUsingGoogle,
     logOut,
     isLoading,
+    userRegister,
+    userSignIn,
   };
 };
 
