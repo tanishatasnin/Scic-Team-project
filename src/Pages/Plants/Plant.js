@@ -17,7 +17,7 @@ const plant = ({plant}) => {
 
             <p className="">{}</p>
             {/* ___ button ________  */}
-            <Link to={`/allplants/${Id}`}>
+            <Link to={`/services/${Id}`}>
                 <button className="btn fs-6 prgoram-text"> <i class="fas fa-info-circle"></i> BOOKING <i class="fas fa-angle-double-right"></i> </button>
             </Link>
 

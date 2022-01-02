@@ -34,7 +34,7 @@ function App() {
         element={<Plants />}
       />
       <Route
-        path="/allplants/:productId"
+        path="/services/:productId"
         element={<Allproduct/>}
       />
       <Route

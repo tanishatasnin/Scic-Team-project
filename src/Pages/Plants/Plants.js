@@ -20,7 +20,7 @@ const Plants = () => {
                         <div className="row row-cols-1 row-cols-md-3">
                         {
        plants.map(plant => <Plant
-           key={plant.id}
+           key={plant.Id}
            plant={plant}
        ></Plant>)
    }
