@@ -21,6 +21,7 @@ function App() {
             path="/"
             element={<Home />}
           />
+
           <Route
             path="/home"
             element={<Home />}

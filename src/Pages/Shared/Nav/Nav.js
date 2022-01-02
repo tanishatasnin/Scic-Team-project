@@ -14,14 +14,22 @@ const Nav = () => {
                         <ul className="nav-links">
                             <label for="close-btn" className="btn close-btn"><i className="fas fa-times"></i></label>
                             <li><Link to="/home">Home</Link></li>
+<<<<<<< HEAD
                             <li><Link to="/home">Products</Link></li>
+=======
+                            <li><a href="#">Products</a></li>
+>>>>>>> main-2
 
                             <li>
                                 <a href="#" className="desktop-item">Dropdown Menu</a>
                                 <input type="checkbox" id="showDrop" />
                                 <label for="showDrop" className="mobile-item">Dropdown Menu</label>
                                 <ul className="drop-menu">
+<<<<<<< HEAD
                                     <li><Link to="/galary">Gallery</Link></li>
+=======
+                                    <li> <Link to="/galary">Gallery</Link></li>
+>>>>>>> main-2
                                     <li><a href="#">Drop menu 2</a></li>
                                     <li><a href="#">Drop menu 3</a></li>
                                     <li><a href="#">Drop menu 4</a></li>
@@ -66,7 +74,11 @@ const Nav = () => {
                                     </div>
                                 </div>
                             </li>
+<<<<<<< HEAD
                             <li><Link to="/home">Blogs</Link></li>
+=======
+                            <li><a href="#">Blogs</a></li>
+>>>>>>> main-2
                             <li><Link to="/about">About</Link></li>
                         </ul>
                         <label for="menu-btn" className="btn menu-btn"><i className="fas fa-bars"></i></label>
