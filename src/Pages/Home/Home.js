@@ -5,9 +5,9 @@ import Footer from '../Shared/Footer/Footer';
 
 const Home = () => {
   return (
-    <div>
+    <div id="home">
 
-      <h1>I am home.  </h1>
+
       <Galary></Galary>
       <Footer></Footer>
     </div>

@@ -14,3 +14,33 @@
     background-image: url(../../../team-project-img/logo/bg-footer1.jpg);
     background-size: cover;
 }
+
+.social-icon i {
+    padding: 15px;
+}
+
+.social-icon i:hover {
+    background-color: #ebe2e2dc;
+    border-radius: 60px;
+}
+
+.top-text {
+    color: white;
+}
+
+.top-text i {
+    padding: 5px;
+
+}
+
+.top-text i:hover {
+
+    border-radius: 60px;
+    color: green;
+    padding-bottom: 2px;
+}
+
+.top-text h3:hover {
+    color: white;
+
+}

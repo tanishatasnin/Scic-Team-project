@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
 import logo from '../../../team-project-img/logo/logo.png'
+import { Slide } from 'react-reveal';
 
 const Footer = () => {
     return (
@@ -13,10 +14,14 @@ const Footer = () => {
                         <div className='col-lg-4 col-sm-12'>
                             <img src={logo} alt="" width={132} />
                             <p >We are a creative company that specializes in strategy & design. We like to create things with like - minded people who are serious about their passions.</p>
-                            <div> <i className="fab fa-linkedin-in"></i>
-                                <i className="fab fa-facebook-f"></i>
-                                <i className="fab fa-twitter"></i>
-                                <i className="fab fa-vimeo-v"></i></div>
+                            <div className='mt-5 social-icon  animate__bounceInLeft'>
+                                <Slide left>
+                                    <i className="fab fa-linkedin-in"></i>
+                                    <i className="fab fa-facebook-f"></i>
+                                    <i className="fab fa-twitter"></i>
+                                    <i className="fab fa-vimeo-v"></i>
+                                </Slide>
+                            </div>
 
                         </div>
                         <div className='col-lg-4 col-sm-12'>
@@ -44,7 +49,9 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className='p-5'>
-                        <Link className='text-decoration-none' to="/home"><i class="far fa-angle-double-up"></i><h3>TOP</h3></Link>
+                        <Slide right>
+                            <Link className=' top-text text-decoration-none' to="/home"><i class="far fa-angle-double-up"></i><h3 className='about-head '>TOP</h3></Link>
+                        </Slide>
                     </div>
 
 

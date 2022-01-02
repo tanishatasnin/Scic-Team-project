@@ -13,12 +13,15 @@ import img11 from '../../team-project-img/img11.jpg';
 import img12 from '../../team-project-img/img12.jpg';
 import img13 from '../../team-project-img/img13.jpg';
 import img14 from '../../team-project-img/img14.jpg';
+
+import Zoom from 'react-reveal/Zoom';
 const Galary = () => {
+
       return (
             <div class="container">
                   <br /><br /><br />
                   <div className='about-head'>
-                        <h1 >Made your house <span className='green-text'>beautyful !</span></h1>
+                        <h1 className='animate__heartBeat' >Made your house <span className='green-text'>beautyful !</span></h1>
                         <h5 className='about-head'> Plants not only make a
                               room feel more cozy and welcoming,
                               but they're also good for your mental
@@ -29,9 +32,11 @@ const Galary = () => {
                   <br /><br />
                   <div class="row">
                         <div class="col-4">
-                              <div class="row mb-3">
-                                    <img className='img-fluid' src={img1} alt="" />
-                              </div>
+                              <Zoom>
+                                    <div class="row mb-3 image">
+                                          <img className='img-fluid' src={img1} alt="" />
+                                    </div>
+                              </Zoom>
 
                               <div class="row mb-3">
                                     <img className='img-fluid' src={img2} alt="" />
@@ -100,6 +105,7 @@ const Galary = () => {
 
 
                   </div>
+
 
             </div>
 

@@ -5,9 +5,9 @@ import './Nav.css';
 const Nav = () => {
     return (
         <div>
-            <div className='mega-nav'>
+            <div className='mega-nav '>
                 <nav>
-                    <div className="wrapper">
+                    <div className="wrapper animate__backInDown">
                         <div className="logo"><a href="#">tree</a></div>
                         <input type="radio" name="slider" id="menu-btn" />
                         <input type="radio" name="slider" id="close-btn" />
@@ -73,7 +73,8 @@ const Nav = () => {
                     </div>
                 </nav>
             </div>
-        </div>
+
+        </div >
     );
 };
 
