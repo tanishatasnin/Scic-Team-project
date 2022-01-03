@@ -24,12 +24,9 @@ const Allproduct = () => {
            plant={plant}
        ></IndoorTree>)
    }
-                                {/* <h1>id is {productId}</h1>  
-                                <h1>{product[0].name}</h1>
-                                <img src={product.image} alt="" />
-                                <h1>{product.about}</h1> */}
+                                
 
-                                {/* <h1>{product.more.title}</h1>            */}
+                             
                               </div>
                );
 };

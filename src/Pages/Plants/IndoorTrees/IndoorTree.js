@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Indor.css';
 const IndoorTree = ({plant}) => {
                const {_id, name,price,tags,title,about, image } = plant;
@@ -19,7 +20,10 @@ const IndoorTree = ({plant}) => {
                 <p>{about}</p> 
                 <h5>{tags}</h5> 
                 <h1>$ {price} </h1>
-                <button>Buy Now</button>
+                {/* <Link to={`/indoor/${_id}`}>
+                <button className="btn fs-6 prgoram-text"> <i class="fas fa-info-circle"></i> BOOKING <i class="fas fa-angle-double-right"></i> </button>
+            </Link> */}
+                {/* <button>Buy Now</button> */}
     </div>
     
   </div>
