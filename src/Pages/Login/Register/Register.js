@@ -1,20 +1,32 @@
 import { getAuth, sendEmailVerification } from "firebase/auth";
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
-import { Link, useHistory, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 import "./Register.css";
 
 const Register = () => {
-  const { signInUsingGoogle, userRegister } = useAuth();
-  const [email, setEmail] = useState();
-  const [password, setPassword] = useState();
+  const {
+    signInUsingGoogle,
+    userRegister,
+    setUser,
+    setError,
+    setIsLoading,
+    updateInfo,
+    error,
+  } = useAuth();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [photoLink, setPhotoLink] = useState("");
+  const [password, setPassword] = useState("");
   const location = useLocation();
-  const history = useHistory();
+  const navigate = useNavigate();
   const redirect_uri = location?.state?.from || "/";
 
   const handleNameChange = (e) => {
-    console.log(e.target.value);
+    const nameC = e.target.value;
+    console.log(nameC);
+    setName(nameC);
   };
 
   const handleEmailChange = (e) => {
@@ -28,29 +40,44 @@ const Register = () => {
     console.log(passwordC);
     console.log(passwordC.length);
     if (passwordC.length < 6) {
-      console.log("Password length must be greater than 6 character");
+      alert("Password length must be greater than 6 character");
     } else {
       setPassword(passwordC);
     }
   };
 
   const handleCheckPasswordChange = (e) => {
-    console.log(e.target.value);
+    const cPassword = e.target.value;
+    console.log(cPassword);
+    if (password !== cPassword) {
+      console.log("Password didn't match");
+    }
+  };
+
+  const handlePhoto = (e) => {
+    const photoUrl = e.target.value;
+    console.log(photoUrl);
+    setPhotoLink(photoUrl);
   };
 
   const handleRegisterForm = (e) => {
     e.preventDefault();
     userRegister(email, password)
-      .then((userCredential) => {
-        const user = userCredential.user;
-        // setUser(user);
-        history.push(redirect_uri);
-        // setError('');
+      .then((res) => {
+        setIsLoading(true);
+        updateInfo(name, photoLink);
+        const user = res.user;
+        setUser(user);
         verifyEmail(email);
+        navigate(redirect_uri);
+        setError("");
       })
       .catch((error) => {
-        const errorCode = error.code;
         const errorMessage = error.message;
+        setError(errorMessage);
+      })
+      .finally(() => {
+        setIsLoading(false);
       });
   };
 
@@ -62,17 +89,18 @@ const Register = () => {
   const handleGoogleSignIn = () => {
     signInUsingGoogle()
       .then((result) => {
+        setIsLoading(true);
         const user = result.user;
-        // setUser(user);
-        // setError('');
-        history.push(redirect_uri);
+        setUser(user);
+        setError("");
+        navigate(redirect_uri);
       })
       .catch((error) => {
         const errorMessage = error.message;
-        // setError(errorMessage);
+        setError(errorMessage);
       })
       .finally(() => {
-        // setIsLoading(false);
+        setIsLoading(false);
       });
   };
 
@@ -127,6 +155,15 @@ const Register = () => {
               placeholder="Re-type Password"
               className="p-2 m-2  w-50 "
               required
+            />
+            <br />
+            <label htmlFor="photo"></label>
+            <input
+              onBlur={handlePhoto}
+              type="text"
+              name="photo"
+              placeholder="Photo Url"
+              className="p-2 m-2  w-50 "
             />
             <br />
             <input type="submit" value="Register" className="p-2 w-50 m-2" />
