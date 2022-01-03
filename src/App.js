@@ -10,17 +10,13 @@ import {
 } from "react-router-dom";
 import Home from './Pages/Home/Home';
 import About from './Pages/About/About';
-<<<<<<< HEAD
 import Nav from './Pages/Shared/Nav/Nav';
-=======
 import Galary from './Pages/Galary/Galary';
->>>>>>> origin/about
 function App() {
   return (
     <div className="App">
 
       <BrowserRouter>
-<<<<<<< HEAD
 
         <Routes>
           <Route
@@ -42,7 +38,6 @@ function App() {
 
         </Routes>
 
-=======
       
       <Routes>
       <Route
@@ -64,7 +59,6 @@ function App() {
       
       </Routes>
       
->>>>>>> origin/about
       </BrowserRouter>
     </div>
   );
