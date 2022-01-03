@@ -15,7 +15,7 @@ import Plants from './Pages/Plants/Plants';
 import Allproduct from './Pages/Plants/Allproduct/Allproduct';
 import SingleTree from './Pages/Plants/Trees/SingleTree';
 import Trees from './Pages/Plants/Trees/Trees';
-import Footer from './Pages/Shared/Footer/Footer';
+// import Footer from './Pages/Shared/Footer/Footer';
 import ConnectUs from './Pages/ConnectUs/ConnectUs';
 
 
@@ -53,7 +53,7 @@ function App() {
               element={<Trees />}
             />
           </Routes>
-          <Footer></Footer>
+          {/* <Footer></Footer> */}
         </BrowserRouter>
       </AuthProvider>
     </div>
