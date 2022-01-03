@@ -13,12 +13,13 @@ const IndoorTree = ({plant}) => {
 <img className='plants-img' src={image} alt="" />
     </div>
     <div class="col text-start about-part">
-                   <br /><br />
+                   <br /><br /><br /><br /><br />
                 <h2 className='text-danger'>{name}</h2> 
                 <h5>{title}</h5>
                 <p>{about}</p> 
                 <h5>{tags}</h5> 
                 <h1>$ {price} </h1>
+                <button>Buy Now</button>
     </div>
     
   </div>
