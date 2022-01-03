@@ -1,4 +1,5 @@
 import React from 'react';
+import ConnectUs from '../ConnectUs/ConnectUs';
 import './About.css'
 const About = () => {
                return (
@@ -26,6 +27,7 @@ const About = () => {
     </div>
   </div>
                                    </div>
+                                   <ConnectUs></ConnectUs>
                               </div>
                );
 };
