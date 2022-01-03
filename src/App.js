@@ -1,58 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-import './App.css';
-import {
-  BrowserRouter as Router,
-  Routes ,
-  Route,
-  Link,
-  BrowserRouter
-} from "react-router-dom";
-import Home from './Pages/Home/Home';
-import About from './Pages/About/About';
-import Galary from './Pages/Galary/Galary';
-import Exp from './Pages/Exp/Exp';
-import Plants from './Pages/Plants/Plants';
-import Allproduct from './Pages/Plants/Allproduct/Allproduct';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+import AuthProvider from "./contexts/AuthProvider";
+import About from "./Pages/About/About";
+import Galary from "./Pages/Galary/Galary";
+import Home from "./Pages/Home/Home";
+import Login from "./Pages/Login/Login/Login";
+import Register from "./Pages/Login/Register/Register";
 function App() {
   return (
     <div className="App">
-     
-      <BrowserRouter>
-      
-      <Routes>
-      <Route
-        path="/"
-        element={<Home />}
-      />
-      <Route
-        path="/galary"
-        element={<Galary />}
-      />
-      <Route
-        path="/services"
-        element={<Plants />}
-      />
-      <Route
-        path="/services/:productId"
-        element={<Allproduct/>}
-      />
-      <Route
-        path="/exp"
-        element={<Exp />}
-      />
-      <Route
-        path="/home"
-        element={<Home />}
-      />
-      <Route
-        path="/about"
-        element={<About />}
-      />
-      
-      </Routes>
-      
-      </BrowserRouter>
+      <AuthProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/galary" element={<Galary />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+          </Routes>
+        </BrowserRouter>
+      </AuthProvider>
     </div>
   );
 }
