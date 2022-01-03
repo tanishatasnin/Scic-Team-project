@@ -46,7 +46,7 @@ const Footer = () => {
                             <p className='mt-5 pb-3'>Subcribe to our newsletter to get more free tips. No Spam, Promise.
                             </p>
                             <div>
-                                <input className='px-5 py-2 text-l footer-form' type="email" name="Email" placeholder='Enter Your Email' id="" />
+                                <input className='px-5 py-2 text-white footer-form' type="email" name="Email" placeholder='Enter Your Email' id="" />
                                 <br />
                                 <button className='mt-2 footer-btn about-head'>SignUp</button>
                             </div>

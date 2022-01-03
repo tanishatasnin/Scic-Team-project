@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Nav.css';
+import logo from '../../../team-project-img/logo/logo.png'
+import mega from '../../../team-project-img/img1.jpg';
 
 const Nav = () => {
     return (
@@ -8,7 +10,8 @@ const Nav = () => {
             <div className='mega-nav '>
                 <nav>
                     <div className="wrapper animate__backInDown">
-                        <div className="logo"><a href="#">tree</a></div>
+                        <div className="logo"><Link to="/home">
+                            <img src={logo} alt="" width={80} /></Link></div>
                         <input type="radio" name="slider" id="menu-btn" />
                         <input type="radio" name="slider" id="close-btn" />
                         <ul className="nav-links">
@@ -34,7 +37,7 @@ const Nav = () => {
                                 <div className="mega-box">
                                     <div className="content">
                                         <div className="row">
-                                            <img src="img.jpg" alt="" />
+                                            <img src={mega} alt="" />
                                         </div>
                                         <div className="row">
                                             <header>Design Services</header>
@@ -59,7 +62,7 @@ const Nav = () => {
                                             <ul className="mega-links">
                                                 <li><a href="#">Site Seal</a></li>
                                                 <li><a href="#">VPS Hosting</a></li>
-                                                g<li><a href="#">Privacy Seal</a></li>
+                                                <li><a href="#">Privacy Seal</a></li>
                                                 <li><a href="#">Website design</a></li>
                                             </ul>
                                         </div>
