@@ -16,7 +16,8 @@
 }
 
 .social-icon i {
-    padding: 15px;
+    padding: 10px;
+    margin: 10px;
 }
 
 .social-icon i:hover {
@@ -36,11 +37,38 @@
 .top-text i:hover {
 
     border-radius: 60px;
-    color: green;
+    color: #4bf54b;
     padding-bottom: 2px;
 }
 
 .top-text h3:hover {
-    color: white;
+    color: #94da46;
 
+}
+
+.footer-btn {
+    background-color: #94da46;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.footer-btn:hover {
+    font-size: 125%;
+    border-bottom: 2px solid black;
+}
+
+.footer-contact li {
+    list-style-type: none;
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-contact {
+    display: flex;
+}
+
+.footer-form {
+    background-color: #fafffa00;
+
+    color: white;
 }

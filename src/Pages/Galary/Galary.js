@@ -15,6 +15,7 @@ import img13 from '../../team-project-img/img13.jpg';
 import img14 from '../../team-project-img/img14.jpg';
 
 import Zoom from 'react-reveal/Zoom';
+import { Slide } from 'react-reveal';
 const Galary = () => {
 
       return (
@@ -38,10 +39,10 @@ const Galary = () => {
                                     </div>
                               </Zoom>
 
-                              <div class="row mb-3">
+                              <Slide left> <div class="row mb-3">
                                     <img className='img-fluid' src={img2} alt="" />
-                              </div>
-                              <div class="row mb-3">
+                              </div></Slide>
+                              <div class="row mb-3 ">
                                     <img className='img-fluid' src={img3} alt="" />
                               </div>
                               <div class="row mb-3">

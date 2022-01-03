@@ -10,13 +10,13 @@ const Footer = () => {
 
             <div className=' addition-bg '>
                 <div className='mx-3  '>
-                    <div className='row  pt-5'>
+                    <div className='row  '>
                         <div className='col-lg-4 col-sm-12'>
-                            <img src={logo} alt="" width={132} />
+                            <img src={logo} alt="" width={133} />
                             <p >We are a creative company that specializes in strategy & design. We like to create things with like - minded people who are serious about their passions.</p>
-                            <div className='mt-5 social-icon  animate__bounceInLeft'>
+                            <div className='mt-5 social-icon   '>
                                 <Slide left>
-                                    <i className="fab fa-linkedin-in"></i>
+                                    <i className="fab fa-linkedin-in paddin"></i>
                                     <i className="fab fa-facebook-f"></i>
                                     <i className="fab fa-twitter"></i>
                                     <i className="fab fa-vimeo-v"></i>
@@ -24,28 +24,32 @@ const Footer = () => {
                             </div>
 
                         </div>
-                        <div className='col-lg-4 col-sm-12'>
-                            <h2 className='about-head'>Our Office</h2>
-                            <div className=' mt-5 d-flex container'>
-                                <i class="fas fa-map-marker-alt">
-                                    <h5>Address</h5></i>
-                            </div>
-                            <div><i class="far fa-phone-alt"></i>
-                                <h5>Call</h5>
-                            </div>
-                            <div><i class="fas fa-envelope"></i>
-                                <h5>Email Us</h5>
-                            </div>
+                        <div className='col-lg-4 col-sm-12 pt-5'>
+                            <h2 className='animate__shakeY about-head'>Our Office</h2>
+                            <ul className='footer-contact mt-5'>
+                                <li> <i class="fas fa-map-marker-alt">
+                                </i></li>
+                                <li className='px-3'> 69 North Cleveland Street, Memphis,USA.</li>
+                            </ul>
+                            <ul className='footer-contact pt-2'>
+                                <li><i className="far fa-phone-alt "></i></li>
+                                <li className='px-3'> (123) 8111 9210 <br />
+                                    (012) 1111 6868</li>
+                            </ul>
+                            <ul className='footer-contact pt-2'>
+                                <li><i className="fas fa-envelope"></i></li>
+                                <li className='px-3'> nature-love@tree.com</li>
+                            </ul>
                         </div>
-                        <div className='col-lg-4 col-sm-12'>
+                        <div className='col-lg-4 col-sm-12 pt-5'>
                             <h2 className='about-head'>News Letter</h2>
-                            <p className='mt-5'>Subcribe to our newsletter to get more free tips. No Spam, Promise.
+                            <p className='mt-5 pb-3'>Subcribe to our newsletter to get more free tips. No Spam, Promise.
                             </p>
-                            <form action="">
-                                <input type="email" name="Email" placeholder='Enter Your Email' id="" />
+                            <div>
+                                <input className='px-5 py-2 text-l footer-form' type="email" name="Email" placeholder='Enter Your Email' id="" />
                                 <br />
-                                <button>SignUp</button>
-                            </form>
+                                <button className='mt-2 footer-btn about-head'>SignUp</button>
+                            </div>
                         </div>
                     </div>
                     <div className='p-5'>
