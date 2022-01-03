@@ -27,7 +27,6 @@ const About = () => {
           </div>
         </div>
       </div>
-      <ConnectUs></ConnectUs>
     </div>
   );
 };

@@ -71,6 +71,7 @@ const Nav = () => {
                             </li>
                             <li><Link to="/home">Blogs</Link></li>
                             <li><Link to="/about">About</Link></li>
+                            <li><Link to="/contact">Contact</Link></li>
                         </ul>
                         <label for="menu-btn" className="btn menu-btn"><i className="fas fa-bars"></i></label>
                     </div>

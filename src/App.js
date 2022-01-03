@@ -16,6 +16,7 @@ import Allproduct from './Pages/Plants/Allproduct/Allproduct';
 import SingleTree from './Pages/Plants/Trees/SingleTree';
 import Trees from './Pages/Plants/Trees/Trees';
 import Footer from './Pages/Shared/Footer/Footer';
+import ConnectUs from './Pages/ConnectUs/ConnectUs';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<ConnectUs />} />
 
 
             <Route path="/galary" element={<Galary />} />
