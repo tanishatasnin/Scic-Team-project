@@ -56,7 +56,7 @@ const ConnectUs = () => {
             <input
               type="text"
               name="email"
-              textarea name="message"
+              
               placeholder="Enter Email"
               className="p-2 w-50 m-2 "
               required
@@ -67,7 +67,8 @@ const ConnectUs = () => {
            
             <input
 //               
-              name="text"
+              
+              textarea name="message"
               placeholder="Massage"
               className=" p-2 m-2 px-4 py-4  w-50 h-50"
 //               onBlur={handlePasswordChange}
