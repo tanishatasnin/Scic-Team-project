@@ -1,5 +1,4 @@
 .footer-bottom {
-    background-color: ;
     color: white;
     padding: 35px;
 
@@ -12,6 +11,64 @@
 }
 
 .addition-bg {
-    background-image: url(../../../team-project-img/bg-footer1.jpg);
+    background-image: url(../../../team-project-img/logo/bg-footer1.jpg);
     background-size: cover;
+}
+
+.social-icon i {
+    padding: 10px;
+    margin: 10px;
+}
+
+.social-icon i:hover {
+    background-color: #ebe2e2dc;
+    border-radius: 60px;
+}
+
+.top-text {
+    color: white;
+}
+
+.top-text i {
+    padding: 5px;
+
+}
+
+.top-text i:hover {
+
+    border-radius: 60px;
+    color: #4bf54b;
+    padding-bottom: 2px;
+}
+
+.top-text h3:hover {
+    color: #94da46;
+
+}
+
+.footer-btn {
+    background-color: #94da46;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.footer-btn:hover {
+    font-size: 125%;
+    border-bottom: 2px solid black;
+}
+
+.footer-contact li {
+    list-style-type: none;
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-contact {
+    display: flex;
+}
+
+.footer-form {
+    background-color: #fafffa00;
+
+    color: white;
 }

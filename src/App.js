@@ -1,28 +1,21 @@
-
-
 import './App.css';
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
   Routes,
   Route,
-  Link,
-  BrowserRouter
 } from "react-router-dom";
 import Home from './Pages/Home/Home';
 import About from './Pages/About/About';
 import Nav from './Pages/Shared/Nav/Nav';
 import Galary from './Pages/Galary/Galary';
-
 import AuthProvider from "./contexts/AuthProvider";
-
-
-
 import Login from "./Pages/Login/Login/Login";
 import Register from "./Pages/Login/Register/Register";
 import Plants from './Pages/Plants/Plants';
 import Allproduct from './Pages/Plants/Allproduct/Allproduct';
 import SingleTree from './Pages/Plants/Trees/SingleTree';
 import Trees from './Pages/Plants/Trees/Trees';
+import Footer from './Pages/Shared/Footer/Footer';
 
 
 function App() {
@@ -58,6 +51,7 @@ function App() {
               element={<Trees />}
             />
           </Routes>
+          <Footer></Footer>
         </BrowserRouter>
       </AuthProvider>
     </div>
