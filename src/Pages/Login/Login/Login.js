@@ -136,9 +136,6 @@ const Login = () => {
             </Link>
           </p>
           {error && <p style={{ color: "red" }}>{error}</p>}
-          {user?.email && (
-            <p style={{ color: "green" }}>User Logged in successfully</p>
-          )}
         </div>
         <div className="col-lg-6 col-md-12 col-xs-12">
           <img
