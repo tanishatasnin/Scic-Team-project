@@ -1,15 +1,14 @@
-import React from 'react';
-import Galary from '../Galary/Galary';
-import Footer from '../Shared/Footer/Footer';
+import React from "react";
 
+import TreeRemove1 from "./TreeRemove1/TreeRemove1";
+import TreeRemove2 from "./TreeRemove2/TreeRemove2";
 
 const Home = () => {
   return (
     <div>
 
-      <h1>I am home.  </h1>
-      <Galary></Galary>
-      <Footer></Footer>
+      <TreeRemove1></TreeRemove1>
+      <TreeRemove2></TreeRemove2>
     </div>
   );
 };

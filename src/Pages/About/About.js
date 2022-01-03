@@ -1,11 +1,12 @@
 import React from 'react';
+import ConnectUs from '../ConnectUs/ConnectUs';
 import './About.css'
 const About = () => {
   return (
-    <div className='about-part '>
+    <div className='about-part'>
       <br /><br /> <br />
 
-      <h1 className='about-head mt-5'><span className='green-text'>Who</span> We Are?</h1>
+      <h1 className='about-head'><span className='green-text'>Who</span> We Are?</h1>
       <p className='container'>We source all indoor plants and planters from our trusted network of growers, artisans, designers, and manufacturers to meet the unique needs of your
         business. Schedule your complimentary on-site Plant Design Consultation.</p>
       <br /><br /><br />
@@ -26,6 +27,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <ConnectUs></ConnectUs>
     </div>
   );
 };

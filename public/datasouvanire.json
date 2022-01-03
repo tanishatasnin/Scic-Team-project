@@ -1,0 +1,52 @@
+[
+               {
+                              "name":"Silver Dollar Plant",
+                              "image": "http://cdn.home-designing.com/wp-content/uploads/2017/01/indoor-plants-Xerosicyos-danguyi-600x600.jpg",
+                              "about":"If you’re looking for drought-tolerant plants, succulents like the Xerosicyos danguyi are fantastic, but it helps to get a container with good drainage like these ceramic and bamboo planters. Xerosicyos are actually a climbing succulent so be prepared to leave a little headroom wherever you display them!",
+                              "title":"ceramic and bamboo planters"   ,
+                              "price":"80"   ,
+                              "tag":"A space with direct sunlight is best"
+                     },
+                     {
+                              "name":"Oxalis",
+                              "image": "http://cdn.home-designing.com/wp-content/uploads/2017/01/Senecio-rowleyanus-hanging-house-plant-600x800.jpg",
+                              "about":"Oxalis triangularis, or false shamrock, is a houseplant native to Brazil, known for its bold and vibrant coloration that can range from violet to crimson. The included link is for the bulbs only but should sprout within a week and may even bloom into lavender flowers within 10 weeks. These look great in a light colored pot.",
+                              "title":"Perfect for a sunny spot in the garden too!"   ,
+                              "price":"100"   ,
+                              "tag":" always exercise caution when choosing placement for display"
+                     },
+                     {
+                              "name":"String Of Pearls",
+                              "image": "http://cdn.home-designing.com/wp-content/uploads/2017/01/Tillandsia-oaxacana-planter-ideas-600x629.jpg",
+                              "about":"What a unique houseplant! Guests are sure to comment on the grace of your beautiful Senecio rowleyanus as its delicate tendrils of round beads overflow its planter. These are great for hanging or draping over a pedestal, preferably in a location just out of the reach of direct sunlight. Plant in loose cactus soil and be careful to avoid overwatering for best results.",
+                              "title":"Best for house"   ,
+                              "price":"120"   ,
+                              "tag":"Be careful to avoid overwatering"
+                     },
+                     {
+                              "name":"Prayer Plant",
+                              "image": "http://cdn.home-designing.com/wp-content/uploads/2017/01/colorful-house-plant-Maranta-leuconeura-600x900.jpg",
+                              "about":"Just look at that amazing color! Maranta leuconeura plants are certainly a work of art. The red veins make them an effective accent for interiors that need a little color. The leaves actually raise and contract based on the day-night cycle, quite interesting to watch as the day progresses. This folding effect is how it gained the common name of “prayer plant”. Like many low-maintenance plants, these simply need indirect light and even moisture",
+                              "title":"Common name of “prayer plant”"   ,
+                              "price":"120"   ,
+                              "tag":"indirect light and even moisture"
+                     },
+                     {
+                              "name":"Calathea Orbifolia",
+                              "image": "http://cdn.home-designing.com/wp-content/uploads/2017/01/indoor-plants-low-light-Calathea-Orbifolia-600x724.jpg",
+                              "about":"Smooth streaks of white stand out against the vivid green leaves of the Calathea orbifolia, like a living painting. These plants are a little tricky to care for compared to some of the others on the list, but the key is to stay calm and make adjustments slowly. Moist soil, good drainage, and low but reliable lighting conditions are a great place to start.",
+                              "title":" Living painting"   ,
+                              "price":"70"   ,
+                              "tag":"Moist soil, good drainage"
+                     },
+                     {
+                              "name":"Swiss Cheese Plant",
+                              "image": "http://cdn.home-designing.com/wp-content/uploads/2017/01/tropical-plants-Monstera-deliciosa-600x600.jpg",
+                              "about":"The scientific name Monstera deliciosa refers, in part, to the edible pineapple-like fruit this rainforest plant can provide – just make sure to read about how to ripen the fruits properly to avoid irritation upon consuming. These stunning large-leafed plants make a great statement piece and add warm, tropical appeal to any interior.",
+                              "title":"Monstera deliciosa "   ,
+                              "price":"50"   ,
+                              "tag":"Avoid irritation upon consuming"
+                     }          
+               
+               
+]
