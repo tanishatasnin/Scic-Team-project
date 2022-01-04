@@ -3,18 +3,18 @@ import "./TreeRemove1.css";
 
 const TreeRemove1 = () => {
   return (
-    <div className="container my-5">
+    <div className="container mb-5">
       <div className="row tree1-section">
         <div className="col-lg-6 col-md-12 col-sm-12  tree1">
           <img src="https://i.ibb.co/74PJGWc/Tree-Remove-1.jpg" alt="" />
         </div>
-        <div className="col-lg-6 col-md-12 col-sm-12 tree1-info mt-2">
+        <div className="col-lg-6 col-md-12 col-sm-12 tree1-info mt-5">
           <p className="mt-5 mb-4">Professional Land & Tree Maintenance</p>
           <hr style={{ width: "5%", color: "black", fontWeight: "bold" }} />
           <h1 style={{ fontWeight: 360, fontSize: "50px" }}>
             Tree Removal <br />
             <span style={{ color: "#9CBB2D" }}>
-              Is An Easy <br />
+              Is An Bad <br />
               Task
             </span>
           </h1>

@@ -5,9 +5,16 @@ const TreeRemove2 = () => {
   return (
     <div className="container my-5 ">
       <div className="row tree2-section">
-        <div className="col-lg-6 tree2-info mb-5">
+        <div className="col-lg-6 tree2-info  my-5">
           <p className="mt-5 mb-4">Professional Land & Tree Maintenance</p>
-          <hr style={{ width: "5%", color: "black", fontWeight: "bold" }} />
+          <hr
+            style={{
+              width: "5%",
+              color: "black",
+              fontWeight: "bold",
+              margin: "right",
+            }}
+          />
           <h1 style={{ fontWeight: 360, fontSize: "50px" }}>
             Tree Removal <br />
             <span style={{ color: "#9CBB2D" }}>
@@ -15,20 +22,18 @@ const TreeRemove2 = () => {
               Task
             </span>
           </h1>
-          <div className="my-4" style={{ width: "60%" }}>
-            <p>
-              Higuera's tree service is proud to serve the comunity work at
-              competitive prices.
-            </p>
-            <div className="d-flex">
-              <div>
-                <h2 style={{ color: "#9CBB2D" }}>20</h2>
-                <h4 style={{ fontWeight: "300" }}>Land</h4>
-              </div>
-              <div className="mx-5">
-                <h2 style={{ color: "#9CBB2D" }}>100+</h2>
-                <h4 style={{ fontWeight: "300" }}>Expert</h4>
-              </div>
+          <p style={{ width: "60%", marginLeft: "40%" }}>
+            Higuera's tree service is proud to serve the comunity work at
+            competitive prices.
+          </p>
+          <div className="d-flex mb-3" style={{ marginLeft: "70%" }}>
+            <div>
+              <h2 style={{ color: "#9CBB2D" }}>20</h2>
+              <h4 style={{ fontWeight: "300" }}>Office</h4>
+            </div>
+            <div className="mx-5">
+              <h2 style={{ color: "#9CBB2D" }}>100+</h2>
+              <h4 style={{ fontWeight: "300" }}>Sellers</h4>
             </div>
           </div>
           <a style={{ textDecoration: "none", color: "gray" }} href="#">
