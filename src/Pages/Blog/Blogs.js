@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Faq from '../Faq/Faq';
 import Blog from './Blog';
 
 const Blogs = () => {
@@ -11,10 +12,8 @@ const Blogs = () => {
 
     }, [])
     return (
-        < div className='container'>
-            <div>
-                <h1>OUR  <span className="The-Journal">plants</span></h1>
-            </div>
+        < div className='container py-5'>
+            <div className='about-part'><h1>Latest <span className='green-text'>Blogs</span ></h1></div>
             <div className="row row-cols-1 row-cols-md-4">
                 {
                     blogs.map(blog => <Blog
@@ -23,6 +22,7 @@ const Blogs = () => {
                     ></Blog>)
                 }
             </div>
+            <Faq></Faq>
         </div>
     );
 };

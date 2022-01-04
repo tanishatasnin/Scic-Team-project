@@ -3,8 +3,10 @@ import { Link } from 'react-router-dom';
 import './Nav.css';
 import logo from '../../../team-project-img/logo/logo.png'
 import mega from '../../../team-project-img/img1.jpg';
+import useAuth from '../../../hooks/useAuth';
 
 const Nav = () => {
+    const { user, logOut } = useAuth();
     return (
         <div>
             <div className='mega-nav pb-3'>
@@ -27,7 +29,7 @@ const Nav = () => {
                                     <li><Link to="/galary">Gallery</Link></li>
                                     <li><a href="#">Drop menu 2</a></li>
                                     <li><a href="#">Drop menu 3</a></li>
-                                    <li><a href="#">Drop menu 4</a></li>
+                                    <li>user.displayName</li>
                                 </ul>
                             </li>
                             <li>
@@ -69,9 +71,15 @@ const Nav = () => {
                                     </div>
                                 </div>
                             </li>
-                            <li><Link to="/home">Blogs</Link></li>
+                            <li><Link to="/blogs">Blogs</Link></li>
                             <li><Link to="/about">About</Link></li>
                             <li><Link to="/contact">Contact</Link></li>
+                            {
+                                user?.email ?
+                                    <li><Link to="/dashboard">Contact</Link></li>
+                                    :
+                                    <li><Link to="/login">Login</Link></li>
+                            }
                         </ul>
                         <label for="menu-btn" className="btn menu-btn"><i className="fas fa-bars"></i></label>
                     </div>
