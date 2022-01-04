@@ -1,0 +1,14 @@
+.tree-img{
+               width: 300px;
+               height: 300px;
+               border-radius: 50%;
+}
+.single-form{
+               width: 60px;
+}
+.img-slider{
+               width: 13%;
+               height: 180px;
+               margin: 15px;
+               /* border-radius: 50%; */
+}

@@ -8,17 +8,8 @@ import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
 import PropTypes from "prop-types";
 import * as React from "react";
-import { NavLink, Route, Routes } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
-import AdminRoute from "../../Login/AdminRoute/AdminRoute";
-import AddProduct from "../AddProduct/AddProduct";
-import AddReview from "../AddReview/AddReview";
-import DashBoardHome from "../DashboardHome/DashboardHome";
-import MakeAdmin from "../MakeAdmin/MakeAdmin";
-import ManageAllOrder from "../ManageAllOrder/ManageAllOrder";
-import ManageAllProducts from "../ManageAllProducts/ManageAllProducts";
-import MyOrders from "../MyOrders/MyOrders";
-import Payment from "../Payment/Payment";
 const drawerWidth = 200;
 
 function Dashboard(props) {
@@ -49,14 +40,13 @@ function Dashboard(props) {
       />
       <h5>{user.displayName}</h5>
       <Divider />
-      <NavLink style={{ textDecoration: "none" }} to={`/dashboard`}>
+      <NavLink style={{ textDecoration: "none" }} to="/dashboard">
         <Button color="inherit">
-          {" "}
           <i className="mx-2 fas fa-columns"></i> Dashboard
         </Button>
       </NavLink>
       <Divider />
-      <NavLink style={{ textDecoration: "none" }} to={`/dashboard/myorders`}>
+      <NavLink style={{ textDecoration: "none" }} to="/dashboard/myorders">
         <Button color="inherit">
           {" "}
           <i className="mx-2 fas fa-shopping-cart"></i> My All Orders
@@ -70,7 +60,7 @@ function Dashboard(props) {
         </Button>
       </NavLink>{" "}
       <Divider />
-      <NavLink style={{ textDecoration: "none" }} to={`/dashboard/addreview`}>
+      <NavLink style={{ textDecoration: "none" }} to="/dashboard/addreview">
         <Button color="inherit">
           <i className="mx-2 far fa-star"></i> Add Review
         </Button>
@@ -78,10 +68,7 @@ function Dashboard(props) {
       <Divider />
       {admin && (
         <Box>
-          <NavLink
-            style={{ textDecoration: "none" }}
-            to={`/dashboard/makeadmin`}
-          >
+          <NavLink style={{ textDecoration: "none" }} to="dashboard/makeadmin">
             <Button color="inherit">
               <i className="mx-2 fas fa-user-plus"></i> Make Admin
             </Button>
@@ -89,7 +76,7 @@ function Dashboard(props) {
           <Divider />
           <NavLink
             style={{ textDecoration: "none" }}
-            to={`/dashboard/addproduct`}
+            to="/dashboard/addproduct"
           >
             <Button color="inherit">
               <i className="mx-2 fab fa-product-hunt"></i> Add Product
@@ -98,7 +85,7 @@ function Dashboard(props) {
           <Divider />
           <NavLink
             style={{ textDecoration: "none" }}
-            to={`/dashboard/manageallorder`}
+            to="/dashboard/manageallorder"
           >
             <Button color="inherit">
               <i className="mx-2 fas fa-tasks"></i> Manage All Order
@@ -107,7 +94,7 @@ function Dashboard(props) {
           <Divider />
           <NavLink
             style={{ textDecoration: "none" }}
-            to={`/dashboard/manageallproducts`}
+            to="dashboard/manageallproducts"
           >
             <Button color="inherit">
               <i className="mx-2 fas fa-sitemap"></i> Manage All Products
@@ -198,44 +185,7 @@ function Dashboard(props) {
           width: { sm: `calc(100% - ${drawerWidth}px)` },
         }}
       >
-        <Routes>
-          <Route exact path="/" element={<DashBoardHome />} />
-          <Route path={`/addreview`} element={<AddReview />} />
-          <Route path="/payment" element={<Payment />} />
-          <Route path={`/dashboard/myOrders`} element={<MyOrders />} />
-          <Route
-            path={`/dashboard/makeAdmin`}
-            element={
-              <AdminRoute>
-                <MakeAdmin></MakeAdmin>
-              </AdminRoute>
-            }
-          ></Route>
-          <Route
-            path={`/dashboard/addProduct`}
-            element={
-              <AdminRoute>
-                <AddProduct></AddProduct>
-              </AdminRoute>
-            }
-          ></Route>
-          <Route
-            path={`/dashboard/manageAllOrder`}
-            element={
-              <AdminRoute>
-                <ManageAllOrder />
-              </AdminRoute>
-            }
-          ></Route>
-          <Route
-            path={`/dashboard/manageallproducts`}
-            element={
-              <AdminRoute>
-                <ManageAllProducts></ManageAllProducts>
-              </AdminRoute>
-            }
-          ></Route>
-        </Routes>
+        <Outlet></Outlet>
       </Box>
     </Box>
   );

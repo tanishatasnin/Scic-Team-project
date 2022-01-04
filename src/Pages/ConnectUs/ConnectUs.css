@@ -1,0 +1,23 @@
+/* .connect-img{
+               width: auto;
+               height: 500px;
+               /* background-color: rgb(182, 177, 177); */
+               
+               /* background-image: url(https://images.unsplash.com/photo-1493673272479-a20888bcee10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80); */
+/* } */ */
+.con-img{
+               width: 500px;
+               height: 700px;
+}
+.text-contact{
+               font-size: 100px;
+}
+.connect-img{
+               background-image: url(https://images.unsplash.com/photo-1493673272479-a20888bcee10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZGFyayUyMHBsYW50fGVufDB8fDB8fA%3D%3D&w=1000&q=80);
+               height: 700px;
+               width: 100%;
+               background-blend-mode: overlay;
+               background-repeat: no-repeat;
+               background-size: cover;
+
+}
