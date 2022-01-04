@@ -13,7 +13,7 @@ const Nav = () => {
                 <nav>
                     <div className="wrapper animate__backInDown">
                         <div className="logo"><Link to="/home">
-                            <img src={logo} alt="" width={80} /></Link></div>
+                            <img src={logo} alt="" width={85} /></Link></div>
                         <input type="radio" name="slider" id="menu-btn" />
                         <input type="radio" name="slider" id="close-btn" />
                         <ul className="nav-links">
