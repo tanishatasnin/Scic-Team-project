@@ -1,0 +1,29 @@
+.font-weight {
+               color: #162F62;
+               font-size: 30px;
+               font-weight: 700;
+               position: relative;
+           }
+           
+           .accordion-sec {
+               display: grid;
+               grid-template-columns: repeat(2, 1fr);
+               grid-gap: 5px;
+           }
+           
+           /*---- responsive accordation---  */
+           
+           
+           @media screen and (max-width:767px) {
+               .accordion-sec {
+                   display: grid;
+                   grid-template-columns: repeat(1, 1fr);
+               }
+           }
+           
+           @media screen and (max-width:767px) {
+               .accordion-sec {
+                   display: grid;
+                   grid-template-columns: repeat(1, 1fr);
+               }
+           }

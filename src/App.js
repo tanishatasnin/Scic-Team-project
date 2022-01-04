@@ -2,6 +2,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import AuthProvider from "./contexts/AuthProvider";
 import About from "./Pages/About/About";
+import Blogs from "./Pages/Blog/Blogs";
+import SingleBlog from "./Pages/Blog/SingleBlog";
 import ConnectUs from "./Pages/ConnectUs/ConnectUs";
 import AddReview from "./Pages/Dashboard/AddReview/AddReview";
 import Dashboard from "./Pages/Dashboard/Dashboard/Dashboard";
@@ -37,9 +39,10 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/services" element={<Plants />} />
+            <Route path="/blogs" element={<Blogs />} />
             <Route path="/services/:productId" element={<Allproduct />} />
             <Route path="/indoor-plants/:treeId" element={<SingleTree />} />
-
+            <Route path="/blogs/:blogId" element={<SingleBlog />} />
             <Route
               path="/dashboard"
               element={
