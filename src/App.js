@@ -17,6 +17,9 @@ import Allproduct from './Pages/Plants/Allproduct/Allproduct';
 import Buy from './Pages/Buy/Buy';
 import Trees from './Pages/Plants/Trees/Trees';
 import SingleTree from './Pages/Plants/Trees/SingleTree';
+
+import Blogs from './Pages/Blog/Blogs';
+import SingleBlog from './Pages/Blog/SingleBlog';
 function App() {
   return (
     <div className="App">
@@ -56,9 +59,11 @@ function App() {
         path="/home"
         element={<Home />}
       />
+      <Route path="/about" element={<About />} />
+      <Route path="/blogs" element={<Blogs />} />
       <Route
-        path="/about"
-        element={<About />}
+        path="/blogs/:blogId"
+        element={<SingleBlog/>}
       />
       
       </Routes>
