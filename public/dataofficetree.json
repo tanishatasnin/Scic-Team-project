@@ -1,0 +1,52 @@
+[
+               {
+                              "name":"Crassula (Jade) Bonsai",
+                              "image": "https://bonsairesourcecenter.com/wp-content/uploads/2021/09/Crassula-Jade-Bonsai.jpg",
+                              "about":"This shrub-like bonsai tree has a thick trunk and leaves and is sensitive to cold, making it ideal for indoor cultivation. Jade bonsai plants hold plenty of water in their leaves, so don’t over-water and be sure to place your tree in a well-draining pot.",
+                              "title":"Best plant for our office/work place"   ,
+                              "price":"100"   ,
+                              "tag":"Don’t over-water and be sure to place"
+                     },
+                     {
+                              "name":"Ficus Bonsai",
+                              "image": "https://bonsairesourcecenter.com/wp-content/uploads/2021/09/ficus-bonsai-2.jpg",
+                              "about":"There are many varieties of ficuses to choose from, the most popular being the Ficus Benjamina and Ficus Retusa, and these beautiful trees can grow fruit in a wide range of colors. Some can even produce flowers. Ficus trees are known for their vivid green leaves with pointed tips and will provide a burst of color to your home.",
+                              "title":"best indoor bonsai tree for beginners"   ,
+                              "price":"80"   ,
+                              "tag":" handle low humidity and less light than most"
+                     },
+                     {
+                              "name":"Carmona",
+                              "image": "https://bonsairesourcecenter.com/wp-content/uploads/2021/09/carmona-bonsai.jpg",
+                              "about":"The Carmona, or Fukien Tea, bonsai is popular not just because it can thrive indoors, but also because of the small white flowers that can blossom year-round and the red fruit it produces. While this plant does well inside with strong light, it is also recommended that you give it some time outdoors in the spring and summer.",
+                              "title":" Well inside with strong light"   ,
+                              "price":"70"   ,
+                              "tag":"Recommended that you give it some time"
+                     },
+                     {
+                              "name":"Schefflera Bonsai",
+                              "image": "https://bonsairesourcecenter.com/wp-content/uploads/2021/09/Schefflera-Bonsai.jpg",
+                              "about":"Otherwise known as the Dwarf Umbrella Tree, schefflera has thin trunks and canopy growth (hence its name). These plants take well to low light and low humidity, similar to the ficus, but if you want a plant you can shape and train, keep in mind that schefflera don’t do well with wiring.",
+                              "title":"USA – Umbrella Tree (Schefflera arboricola)"   ,
+                              "price":"120"   ,
+                              "tag":"Take well to low light"
+                     },
+                     {
+                              "name":"Chinese Elm Bonsai",
+                              "image": "https://bonsairesourcecenter.com/wp-content/uploads/2021/09/Chinese-elm-bonsai_resized.jpg",
+                              "about":"When you picture a classic bonsai tree, it’s probably the Chinese elm that comes to mind. Another indoor tree that’s ideal for beginners, they grow quickly and can be pruned and trained to your liking. Plus, if you over- or under-water, it’s not as detrimental as it would be with other types. ",
+                              "title":" ideal for beginners"   ,
+                              "price":"60"   ,
+                              "tag":" Over- or under-water"
+                     },
+                     {
+                              "name":"Serissa Japonica (Snow Rose) Bonsai",
+                              "image": "https://bonsairesourcecenter.com/wp-content/uploads/2021/09/Serissa-Japonica-Snow-Rose-Bonsai.jpg",
+                              "about":"Last but not least (really, we could go on forever), the Serissa Japonica bonsai is known for its stunning tiny white flowers that bud in the spring and summer. Known as “the tree of a thousand stars,” we’ve added this one last because it’s not as easy to care for as our other five choices. It can be sensitive to changes in temperature and location, as well as light and water levels. It can grow both indoors and outdoors depending on the climate where you live. ",
+                              "title":"the tree of a thousand stars"   ,
+                              "price":"120"   ,
+                              "tag":"well as light and water levels"
+                     }          
+               
+               
+]

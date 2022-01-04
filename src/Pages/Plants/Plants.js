@@ -6,7 +6,7 @@ const Plants = () => {
                const [plants ,setPlants] =useState([])
                // _________________ data fetch from fake data  _____________ 
                               useEffect(()=>{
-                                             fetch("data.json")  
+                                             fetch("http://localhost:5000/plants")  
                                              .then(res=>res.json())   
                                              .then(data=>setPlants(data))
                               
@@ -20,7 +20,7 @@ const Plants = () => {
                         <div className="row row-cols-1 row-cols-md-3">
                         {
        plants.map(plant => <Plant
-           key={plant.Id}
+           key={plant._id}
            plant={plant}
        ></Plant>)
    }

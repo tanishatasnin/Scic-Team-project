@@ -1,37 +1,42 @@
-.about-part{
-               font-family: Georgia, 'Times New Roman', Times, serif;
+.about-part {
+  font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
-.green-text{
-               color: green;
-               
+
+.green-text {
+  color: #94da46;
+
 }
-.about-head{
-               font-family:Comic Sans MS;
+
+.about-head {
+  font-family: Comic Sans MS;
 }
 
 @media screen and (max-width: 660px) {
-               header {text-align: center;}
-               .about-part{
-width:100% ;
+  header {
+    text-align: center;
+  }
 
-               }
-               .row{
-                      display: flex;
-               }
-               .about-img{
-                              display: none;
-               }
-               
-               /* .logo-box {
+  .about-part {
+    width: 100%;
+
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .about-img {
+    display: none;
+  }
+
+  /* .logo-box {
                  float: none;
                  display: inline-block;
                  margin: 0 0 16px 0;
                }
                ul {float: none;}
                nav li:first-of-type {margin-left: 0;} */
-             }
-             @media screen and (max-width: 550px) {
-             
-             
-             }
+}
+
+@media screen and (max-width: 550px) {}

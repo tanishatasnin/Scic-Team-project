@@ -1,18 +1,32 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams } from 'react-router';
+import IndoorTree from '../IndoorTrees/IndoorTree';
+
 
 const Allproduct = () => {
                const { productId } = useParams();
-    const [plant,setProduct] = useState({})
+    const [product,setProduct] = useState([])
+    // console.log(product);
     useEffect(()=>{
-               fetch(`http://localhost:3000/plants/${productId}`)
+               fetch(`http://localhost:5000/plants/${productId}`)
                .then(res=>res.json())
-               .then(data=> console.log(data))
+               .then(data=> setProduct(data.more))
            },[])
+
+           
+          
                return (
+                
                               <div>
-                                <h1>id is {productId}</h1>  
-                                <h1>{plant.name}</h1>           
+                               {
+       product.map(plant => <IndoorTree
+          //  key={plant._id}
+           plant={plant}
+       ></IndoorTree>)
+   }
+                                
+
+                             
                               </div>
                );
 };
