@@ -1,10 +1,17 @@
 .tree-spinner-count {
     background-color: #ffffff;
     padding: 65px 0px 65px 0px;
+
 }
 
 .tree-spinner-count h1,
 h4 {
     color: #94da46;
     font-weight: 400;
+}
+
+.count-main {
+    margin-top: -40px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
 }
