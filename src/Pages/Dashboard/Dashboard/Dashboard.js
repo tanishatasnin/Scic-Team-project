@@ -10,7 +10,7 @@ import PropTypes from "prop-types";
 import * as React from "react";
 import { NavLink, Route, Routes } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
-import AdminRoute from "../../Login/AdminRoute/AdminRoute";
+import AdminRoute from "../../Login/Login/AdminRoute/AdminRoute";
 import AddProduct from "../AddProduct/AddProduct";
 import AddReview from "../AddReview/AddReview";
 import DashBoardHome from "../DashboardHome/DashboardHome";
@@ -203,7 +203,7 @@ function Dashboard(props) {
           <Route path={`/addreview`} element={<AddReview />} />
           <Route path="/payment" element={<Payment />} />
           <Route path={`/dashboard/myOrders`} element={<MyOrders />} />
-          {/* <Route
+          <Route
             path={`/dashboard/makeAdmin`}
             element={
               <AdminRoute>
@@ -234,7 +234,7 @@ function Dashboard(props) {
                 <ManageAllProducts></ManageAllProducts>
               </AdminRoute>
             }
-          ></Route> */}
+          ></Route>
         </Routes>
       </Box>
     </Box>

@@ -10,8 +10,8 @@ const Home = () => {
     <div id="home">
       <Plants></Plants>
       <Galary></Galary>
-      {/* <TreeRemove1></TreeRemove1>
-      <TreeRemove2></TreeRemove2> */}
+      <TreeRemove1></TreeRemove1>
+      <TreeRemove2></TreeRemove2>
     </div>
   );
 };
