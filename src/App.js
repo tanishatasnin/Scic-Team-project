@@ -17,6 +17,8 @@ import SingleTree from './Pages/Plants/Trees/SingleTree';
 import Trees from './Pages/Plants/Trees/Trees';
 import Footer from './Pages/Shared/Footer/Footer';
 import ConnectUs from './Pages/ConnectUs/ConnectUs';
+import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
+import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
 
 
 function App() {
@@ -45,7 +47,17 @@ function App() {
             />
             <Route
               path="/indoor-plants/:treeId"
-              element={<SingleTree />}
+              element={
+                <SingleTree />}
+            />
+
+            <Route
+              path="/dashboard"
+              element={
+                <PrivateRoute>
+                  <Dashboard />
+                </PrivateRoute>
+              }
             />
 
             <Route
