@@ -19,6 +19,8 @@ import Footer from './Pages/Shared/Footer/Footer';
 import ConnectUs from './Pages/ConnectUs/ConnectUs';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
+import SingleBlog from './Pages/Blog/SingleBlog';
+import Blogs from './Pages/Blog/Blogs';
 
 
 function App() {
@@ -42,8 +44,16 @@ function App() {
               element={<Plants />}
             />
             <Route
+              path="/blogs"
+              element={<Blogs />}
+            />
+            <Route
               path="/services/:productId"
               element={<Allproduct />}
+            />
+            <Route
+              path="/blogs/:blogId"
+              element={<SingleBlog />}
             />
             <Route
               path="/indoor-plants/:treeId"
