@@ -11,7 +11,7 @@ import "./ManageAllProducts.css";
 const ManageAllProducts = () => {
   const [fullProducts, setFullProducts] = useState([]);
   useEffect(() => {
-    fetch("https://nameless-forest-32415.herokuapp.com/products")
+    fetch("")
       .then((res) => res.json())
       .then((data) => {
         setFullProducts(data);
@@ -21,7 +21,7 @@ const ManageAllProducts = () => {
   const handleDeleteProduct = (id) => {
     const proceed = window.confirm("Are you really want to delete?");
     if (proceed) {
-      const url = `https://nameless-forest-32415.herokuapp.com/products/${id}`;
+      const url = "";
       fetch(url, {
         method: "DELETE",
       })

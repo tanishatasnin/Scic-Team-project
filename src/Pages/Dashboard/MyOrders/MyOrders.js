@@ -14,9 +14,7 @@ const MyOrders = () => {
   console.log(email);
   const [userOrder, setUserOrder] = useState([]);
   useEffect(() => {
-    fetch(
-      `https://nameless-forest-32415.herokuapp.com/orders/users?email=${email}`
-    )
+    fetch("")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -27,7 +25,7 @@ const MyOrders = () => {
   const handleCancelOrder = (id) => {
     const proceed = window.confirm("Are you really want to delete?");
     if (proceed) {
-      const url = `https://nameless-forest-32415.herokuapp.com/orders/${id}`;
+      const url = "";
       fetch(url, {
         method: "DELETE",
       })

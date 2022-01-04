@@ -15,7 +15,7 @@ const AddReview = () => {
     const message = messageRef.current.value;
 
     const newReview = { name, img, star, message };
-    fetch("https://nameless-forest-32415.herokuapp.com/review", {
+    fetch("", {
       method: "POST",
       headers: {
         "content-type": "application/json",

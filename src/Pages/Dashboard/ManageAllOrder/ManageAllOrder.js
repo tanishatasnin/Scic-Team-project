@@ -18,7 +18,7 @@ const ManageAllOrder = () => {
   console.log(status);
 
   useEffect(() => {
-    fetch("https://nameless-forest-32415.herokuapp.com/orders")
+    fetch("")
       .then((res) => res.json())
       .then((data) => {
         setOrderedProducts(data);
@@ -27,7 +27,7 @@ const ManageAllOrder = () => {
   }, []);
 
   const handleUpdate = (id) => {
-    fetch(`https://nameless-forest-32415.herokuapp.com/orders/${id}`, {
+    fetch("", {
       method: "PUT",
       headers: {
         "content-type": "application/json",

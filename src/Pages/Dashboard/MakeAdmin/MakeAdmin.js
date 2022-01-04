@@ -11,7 +11,7 @@ const MakeAdmin = () => {
   };
   const handleAdminSubmit = (e) => {
     const user = { email };
-    fetch("https://nameless-forest-32415.herokuapp.com/users/admin", {
+    fetch("", {
       method: "PUT",
       headers: {
         "content-type": "application/json",

@@ -13,7 +13,7 @@ const AddProduct = () => {
     const price = priceRef.current.value;
 
     const newProduct = { name, img, price };
-    fetch("https://nameless-forest-32415.herokuapp.com/products", {
+    fetch("", {
       method: "POST",
       headers: {
         "content-type": "application/json",
