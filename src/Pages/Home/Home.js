@@ -1,5 +1,7 @@
 import { CssBaseline, makeStyles } from "@material-ui/core";
 import React from "react";
+import Blogs from "../Blog/Blogs";
+import Plants from "../Plants/Plants";
 import Simpleslider from "../Plants/Trees/Simpleslider";
 import Header from "./Banner/Header";
 import PlaceToVisit from "./Banner/PlaceToVisit";
@@ -31,6 +33,8 @@ const Home = () => {
       <TreeCount></TreeCount>
       <TreeRemove1></TreeRemove1>
       <TreeRemove2></TreeRemove2>
+      <Plants></Plants>
+      <Blogs></Blogs>
       <Simpleslider></Simpleslider>
 
     </div>

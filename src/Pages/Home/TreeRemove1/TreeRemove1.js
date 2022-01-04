@@ -13,7 +13,7 @@ const TreeRemove1 = () => {
           <hr style={{ width: "5%", color: "black", fontWeight: "bold" }} />
           <h1 style={{ fontWeight: 360, fontSize: "60px" }}>
             Tree Plantation <br />
-            <span style={{ color: "#9CBB2D" }}>
+            <span style={{ color: "#94da46" }}>
               Is An Bad <br />
               Task
             </span>
@@ -28,11 +28,11 @@ const TreeRemove1 = () => {
               quality tools so that the jobs are done to the highest standards.
             </p>
           </div>
-          <a style={{ textDecoration: "none", color: "gray" }} href="#">
+          <a style={{ textDecoration: "none", color: "#94da46" }} href="#">
             Booking Now{" "}
             <i
               className=" fas fa-chevron-circle-right"
-              style={{ color: "#9CBB2D" }}
+              style={{ color: "#94da46" }}
             ></i>
           </a>
         </div>

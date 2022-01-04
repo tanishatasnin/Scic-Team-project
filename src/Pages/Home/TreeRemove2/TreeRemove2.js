@@ -1,5 +1,6 @@
 import React from "react";
 import "./TreeRemove2.css";
+import CountUp from 'react-countup';
 
 const TreeRemove2 = () => {
   return (
@@ -17,7 +18,7 @@ const TreeRemove2 = () => {
           />
           <h1 style={{ fontWeight: 360, fontSize: "50px" }}>
             Tree Plantation <br />
-            <span style={{ color: "#9CBB2D" }}>
+            <span style={{ color: "#94da46" }}>
               Is An Easy <br />
               Task
             </span>
@@ -28,19 +29,19 @@ const TreeRemove2 = () => {
           </p>
           <div className="d-flex mb-3" style={{ marginLeft: "70%" }}>
             <div>
-              <h2 style={{ color: "#9CBB2D" }}>20</h2>
+              <h2 style={{ color: "#94da46" }}><CountUp end={20} duration={3} /> </h2>
               <h4 style={{ fontWeight: "300" }}>Office</h4>
             </div>
             <div className="mx-5">
-              <h2 style={{ color: "#9CBB2D" }}>100+</h2>
+              <h2 style={{ color: "#94da46" }}><CountUp end={100} duration={5} />+</h2>
               <h4 style={{ fontWeight: "300" }}>Sellers</h4>
             </div>
           </div>
-          <a style={{ textDecoration: "none", color: "gray" }} href="#">
+          <a style={{ textDecoration: "none", color: "#94da46" }} href="#">
             Booking Now{" "}
             <i
               className=" fas fa-chevron-circle-right"
-              style={{ color: "#9CBB2D" }}
+              style={{ color: "#94da46" }}
             ></i>
           </a>
         </div>
