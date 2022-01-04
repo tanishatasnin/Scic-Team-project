@@ -8,7 +8,7 @@ const Allproduct = () => {
     const [product,setProduct] = useState([])
     // console.log(product);
     useEffect(()=>{
-               fetch(`http://localhost:5000/plants/${productId}`)
+               fetch(`https://boiling-forest-63211.herokuapp.com/plants/${productId}`)
                .then(res=>res.json())
                .then(data=> setProduct(data.more))
            },[])

@@ -6,7 +6,7 @@ const Plants = () => {
                const [plants ,setPlants] =useState([])
                // _________________ data fetch from fake data  _____________ 
                               useEffect(()=>{
-                                             fetch("http://localhost:5000/plants")  
+                                             fetch("https://boiling-forest-63211.herokuapp.com/plants")  
                                              .then(res=>res.json())   
                                              .then(data=>setPlants(data))
                               
