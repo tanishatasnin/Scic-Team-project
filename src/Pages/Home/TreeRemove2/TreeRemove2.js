@@ -16,7 +16,7 @@ const TreeRemove2 = () => {
             }}
           />
           <h1 style={{ fontWeight: 360, fontSize: "50px" }}>
-            Tree Removal <br />
+            Tree Plantation <br />
             <span style={{ color: "#9CBB2D" }}>
               Is An Easy <br />
               Task
