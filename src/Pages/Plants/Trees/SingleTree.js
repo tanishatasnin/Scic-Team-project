@@ -6,7 +6,7 @@ const SingleTree = () => {
                const { treeId } = useParams();
                const [tree,setTree] = useState({})
                useEffect(()=>{
-                          fetch(`http://localhost:5000/indoor-plants/${treeId}`)
+                          fetch(`https://boiling-forest-63211.herokuapp.com/indoor-plants/${treeId}`)
                           .then(res=>res.json())
                           .then(data=> setTree(data))
                       },[])

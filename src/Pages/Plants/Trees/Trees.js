@@ -5,7 +5,7 @@ const Trees = () => {
                const [trees ,setTrees] =useState([])
                // _____ fetch ____ 
                useEffect(()=>{
-                              fetch("http://localhost:5000/indoor-plants")  
+                              fetch("https://boiling-forest-63211.herokuapp.com/indoor-plants")  
                               .then(res=>res.json())   
                               .then(data=>setTrees(data))
                

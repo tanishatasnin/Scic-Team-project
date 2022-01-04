@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Tree.css';
 const Tree = ({tree}) => {
-               const {_id, name,title, image } = tree;
+               const {_id,name,title, image } = tree;
                return (
                               <div className="container">
                                        

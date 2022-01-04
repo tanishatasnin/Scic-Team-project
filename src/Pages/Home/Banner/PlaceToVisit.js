@@ -5,7 +5,7 @@ import places from './Static/Static';
 import useWindowPosition from '../../../hooks/UseWindowPosition';
 const useStyles = makeStyles((theme) => ({
   root: {
-    minHeight: '90vh',
+    minHeight: '20vh',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
