@@ -23,7 +23,7 @@ const TreeRemove2 = () => {
             <div className="d-flex">
               <div>
                 <h2 style={{ color: "#9CBB2D" }}>20</h2>
-                <h4 style={{ fontWeight: "300" }}>Land</h4>
+                <h4 style={{ fontWeight: "300", fontSize: "25" }}>Land</h4>
               </div>
               <div className="mx-5">
                 <h2 style={{ color: "#9CBB2D" }}>100+</h2>

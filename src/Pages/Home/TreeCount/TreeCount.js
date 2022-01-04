@@ -1,5 +1,6 @@
 import React from 'react';
 import CountUp from 'react-countup';
+import './TreeCount.css';
 
 
 const TreeCount = () => {
@@ -9,26 +10,31 @@ const TreeCount = () => {
     return (
         <div>
             <div className='container'>
-                <div className='row '>
-                    <div className='col-md-6 col-lg-3 col-sm-12'>
-                        <h1>7/10</h1>
+                <div className='row row-cols-2  tree-spinner-count '>
+                    <div className='col-md-6 col-lg-3 col-sm-6'>
+                        <div>
+                            <h1><CountUp end={7} duration={3} />/10</h1>
+                        </div>
+
+                        <h4>Top US</h4>
+
                     </div>
-                    <div className='col-md-6 col-lg-3 col-sm-12'>
-                        <h1>100</h1>
+                    <div className='col-md-6 col-lg-3 col-sm-6'>
+                        <h1><CountUp end={100} duration={5} /></h1>
+                        <h4>Client Review</h4>
                     </div>
-                    <div className='col-md-6 col-lg-3 col-sm-12'>
-                        <h2>2/3</h2>
+                    <div className='col-md-6 col-lg-3 col-sm-6'>
+                        <h1>2/3</h1>
+                        <h4>Best Price</h4>
                     </div>
-                    <div className='col-md-6 col-lg-3 col-sm-12'>
-                        <h2>300</h2>
+                    <div className='col-md-6 col-lg-3 col-sm-6'>
+                        <h1><CountUp end={300} duration={3} /></h1>
+                        <h4>Original
+                            Equipment</h4>
                     </div>
                 </div>
             </div>
 
-
-
-
-            <CountUp end={123457} duration={5} />
 
 
 
