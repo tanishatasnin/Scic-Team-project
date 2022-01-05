@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    margin-bottom: 25px;
 
 }
 
@@ -21,7 +22,7 @@ nav .wrapper {
     line-height: 70px;
     margin: auto;
     display: flex;
-    align-items: left;
+    align-items: center;
     justify-content: start;
 }
 

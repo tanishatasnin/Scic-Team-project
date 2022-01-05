@@ -1,10 +1,9 @@
 import React from 'react';
-import ConnectUs from '../ConnectUs/ConnectUs';
 import './About.css'
 const About = () => {
   return (
     <div className='about-part'>
-      <br /><br /> <br />
+      <br /><br /> <br /> <br />
 
       <h1 className='about-head'><span className='green-text'>Who</span> We Are?</h1>
       <p className='container'>We source all indoor plants and planters from our trusted network of growers, artisans, designers, and manufacturers to meet the unique needs of your
