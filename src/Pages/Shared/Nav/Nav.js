@@ -33,27 +33,29 @@ const Nav = () => {
                                             <header>Design Services</header>
                                             <ul className="mega-links">
                                                 <li><Link to="/galary">Gallery</Link></li>
-                                                <li><a href="#">menu 2</a></li>
-                                                <li><a href="#">menu 3</a></li>
-                                                <li><a href="#">menu 3</a></li>
+                                                <li><Link to="/blogs">Blogs</Link></li>
+                                                <li><Link to="/trees">Trees</Link></li>
                                             </ul>
                                         </div>
                                         <div className="row">
-                                            <header>Email Services</header>
+                                            <header>Main Catagories</header>
                                             <ul className="mega-links">
-                                                <li><a href="#">Personal Email</a></li>
-                                                <li><a href="#">Business Email</a></li>
-                                                <li><a href="#">Mobile Email</a></li>
-                                                <li><a href="#">Web Marketing</a></li>
+                                                <li> <Link to="/services/61d2902930b9039c684992d0">Out Door Plants</Link> </li>
+                                                <li> <Link to="/services/61d297f530b9039c6858b7e3">Office Plants</Link> </li>
+                                                <li> <Link to="/services/61d29eb630b9039c6865a870"> Plant Pot</Link> </li>
+                                                <li> <Link to="/services/61d2a59d30b9039c68728f8b"> Plant Awesome</Link> </li>
+
+
                                             </ul>
                                         </div>
                                         <div className="row">
-                                            <header>Security services</header>
+                                            <header> Customer services</header>
                                             <ul className="mega-links">
-                                                <li><a href="#">Site Seal</a></li>
-                                                <li><a href="#">VPS Hosting</a></li>
-                                                <li><a href="#">Privacy Seal</a></li>
-                                                <li><a href="#">Website design</a></li>
+                                                <li> <Link to="/faq"> FAQ</Link> </li>
+                                                <li> <Link to="/faq">Contact</Link> </li>
+                                                <li> <Link to="/faq">Privacy Policy</Link> </li>
+
+
                                             </ul>
                                         </div>
                                     </div>
@@ -71,11 +73,9 @@ const Nav = () => {
                                         <label for="showDrop" className="mobile-item">{user.displayName}</label>
                                         <ul className="drop-menu">
                                             <li><Link to="/dashboard">Dashboard</Link></li>
-                                            <li><Link to="/galary">Gallery</Link></li>
+
                                             <li><Link to="" onClick={logOut}>LogOut</Link></li>
 
-                                            <li><a href="#">Drop menu 2</a></li>
-                                            <li><a href="#">Drop menu 3</a></li>
 
                                         </ul>
                                     </li>

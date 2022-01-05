@@ -32,6 +32,8 @@ function Dashboard(props) {
       <img
         className="mb-3"
         src={user.photoURL}
+        width={100}
+        height={100}
         alt=""
         style={{
           borderRadius: "50%",

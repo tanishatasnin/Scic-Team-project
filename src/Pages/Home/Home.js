@@ -9,6 +9,7 @@ import TreeCount from "./TreeCount/TreeCount";
 import TreeRemove1 from "./TreeRemove1/TreeRemove1";
 import TreeRemove2 from "./TreeRemove2/TreeRemove2";
 import Footer from "../Shared/Footer/Footer";
+import Plants from "../Plants/Plants";
 
 
 function Home() {
@@ -35,6 +36,7 @@ function Home() {
         <PlaceToVisit />
       </div>
       <TreeCount></TreeCount>
+      <Plants></Plants>
       <TreeRemove1></TreeRemove1>
       <TreeRemove2></TreeRemove2>
 
