@@ -14,7 +14,7 @@ const useStyles = makeStyles({
     margin: '20px',
   },
   media: {
-    height: 240,
+    height: 300,
 
   },
   title: {

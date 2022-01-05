@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import Footer from '../../Shared/Footer/Footer';
+import Nav from '../../Shared/Nav/Nav';
 import Tree from './Tree';
 
 const Trees = () => {
@@ -12,6 +14,7 @@ const Trees = () => {
     }, [])
     return (
         < div >
+            <Nav></Nav>
             <div>
                 <br /><br /><br /><br /><br />
                 <h1>OUR  <span className="The-Journal">plants</span></h1>
@@ -24,6 +27,7 @@ const Trees = () => {
                     ></Tree>)
                 }
             </div>
+            <Footer></Footer>
         </div>
     );
 };

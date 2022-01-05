@@ -1,6 +1,8 @@
 import React from 'react';
 import './ConnectUs.css';
 import emailjs from 'emailjs-com';
+import Nav from '../Shared/Nav/Nav';
+import Footer from '../Shared/Footer/Footer';
 const ConnectUs = () => {
   // +++++++++++ emailjs+++++++++++++ 
   const sendEmail = (e) => {
@@ -17,8 +19,8 @@ const ConnectUs = () => {
   }
   return (
     <div>
-      <small>.</small>
-      <div class="">
+      <Nav></Nav>
+      <div >
 
         <div class=" connect-img row row-cols-2">
           <div class="col">
@@ -80,7 +82,7 @@ const ConnectUs = () => {
         </div>
 
       </div>
-
+      <Footer></Footer>
     </div>
 
   );

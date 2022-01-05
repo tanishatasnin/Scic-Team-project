@@ -22,7 +22,7 @@ import SingleTree from "./Pages/Plants/Trees/SingleTree";
 import Trees from "./Pages/Plants/Trees/Trees";
 import Footer from "./Pages/Shared/Footer/Footer";
 import Nav from "./Pages/Shared/Nav/Nav";
-import Faq from "./Pages/Faq/Faq";
+import Faq from "./Pages/Faq/Faq"
 
 function App() {
   return (
