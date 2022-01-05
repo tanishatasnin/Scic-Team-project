@@ -1,6 +1,7 @@
 import { CssBaseline, makeStyles } from "@material-ui/core";
 import React from "react";
 import Blogs from "../Blog/Blogs";
+import Plants from "../Plants/Plants";
 import Simpleslider from "../Plants/Trees/Simpleslider";
 import Footer from "../Shared/Footer/Footer";
 import Nav from "../Shared/Nav/Nav";
@@ -33,6 +34,7 @@ function Home() {
         <PlaceToVisit />
       </div>
       <TreeCount></TreeCount>
+      <div className="py-3"> <Plants></Plants></div>
       <TreeRemove1></TreeRemove1>
       <TreeRemove2></TreeRemove2>
 

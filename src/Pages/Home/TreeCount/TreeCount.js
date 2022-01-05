@@ -12,7 +12,7 @@ const TreeCount = () => {
         <div>
             <Zoom>
 
-                <div className='container count-main '>
+                <div className='container count-main'>
                     <div className='row row-cols-2  tree-spinner-count '>
                         <div className='col-md-6 col-lg-3 col-sm-6'>
                             <div>

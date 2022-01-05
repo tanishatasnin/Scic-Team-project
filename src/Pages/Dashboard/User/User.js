@@ -2,7 +2,7 @@ import React from "react";
 
 const User = () => {
   return (
-    <div style={{ width: "100%", textAlign: "center" }}>
+    <div style={{ width: "100%", textAlign: "center", marginTop: '100px' }}>
       <h1>
         See your orders <br />&<br /> Give us your review
       </h1>

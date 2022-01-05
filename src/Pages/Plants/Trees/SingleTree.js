@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import Buy from './Buy';
 import Simpleslider from './Simpleslider';
 
 const SingleTree = () => {
@@ -40,42 +41,8 @@ const SingleTree = () => {
         {/* +++++ form +++++++++  */}
         <div class="col">
           <br /><br /><br /><br />
+          <Buy></Buy>
 
-          <form>
-            {/* onSubmit={handleLoginForm} */}
-
-            <label htmlFor="email"></label>
-            <input
-              type="name"
-              name="Name"
-              placeholder="Name"
-              className="p-2 m-2  w-100 "
-              //               onBlur={handlePasswordChange}
-              required
-            />
-
-            <input
-              type="text"
-              name="email"
-              placeholder="Enter Email"
-              className="p-2 w-100 m-2 "
-              //               onBlur={handleEmailChange}
-              required
-            />
-            <br />
-
-            <input
-              //               type="number"
-              name="number"
-              placeholder="phone Number"
-              className="p-2 m-2  w-100 "
-              //               onBlur={handlePasswordChange}
-              required
-            />
-            <br />
-
-            <input type="submit" value="Buy now" className="p-2 w-100 m-2" />
-          </form>
         </div>
       </div>
       <hr />
