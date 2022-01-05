@@ -21,6 +21,7 @@ import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
 import SingleBlog from './Pages/Blog/SingleBlog';
 import Blogs from './Pages/Blog/Blogs';
+import Faq from './Pages/Faq/Faq';
 
 
 function App() {
@@ -46,6 +47,10 @@ function App() {
             <Route
               path="/blogs"
               element={<Blogs />}
+            />
+            <Route
+              path="/faq"
+              element={<Faq />}
             />
             <Route
               path="/services/:productId"

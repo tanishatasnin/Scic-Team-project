@@ -13,8 +13,10 @@ const Blogs = () => {
                }, [])
                return (
                               < div className='container'>
-                                             <div>
-                                                            <h1>OUR  <span className="The-Journal">plants</span></h1>
+                                             <br /><br /><br />
+                                             <div className='about-part'>
+                                                            <h1>OUR Special  <span className="green-text">Blogs</span></h1>
+                                                            <h5>Welcome to the National Forest Foundation blog. Explore the various articles to learn more about our forests and places to play.</h5>
                                              </div>
                                              <div className="row row-cols-1 row-cols-md-4">
                                                             {
