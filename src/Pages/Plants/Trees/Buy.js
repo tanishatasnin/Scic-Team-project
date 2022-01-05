@@ -80,8 +80,9 @@ const Buy = () => {
                                                             />
                                                             <br />
 
-                                                            {bookedProduct && <Alert severity="success">Booking successfully!</Alert>}
+
                                                             <input type="submit" value="Buy now" className="p-2 w-100 m-2" />
+                                                            {bookedProduct && <Alert severity="success">Booking successfully!</Alert>}
                                              </form>
                               </div>
                );
