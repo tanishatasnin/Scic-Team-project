@@ -10,7 +10,7 @@ import PropTypes from "prop-types";
 import * as React from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
-const drawerWidth = 200;
+const drawerWidth = 210;
 
 function Dashboard(props) {
   const { user, admin, logOut } = useAuth();
@@ -30,6 +30,7 @@ function Dashboard(props) {
       </NavLink>
       <br />
       <img
+        className="mb-3"
         src={user.photoURL}
         alt=""
         style={{

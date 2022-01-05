@@ -54,7 +54,7 @@ const Footer = () => {
                     </div>
                     <div className='p-5'>
                         <Slide right>
-                            <Link className=' top-text text-decoration-none' to="/home"><i class="far fa-angle-double-up"></i><h3 className='about-head '>TOP</h3></Link>
+                            <a href='#' className=' top-text text-decoration-none' to="/home"><i class="far fa-angle-double-up"></i><h3 className='about-head '>TOP</h3></a>
                         </Slide>
                     </div>
 
