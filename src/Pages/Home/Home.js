@@ -2,7 +2,6 @@ import { CssBaseline, makeStyles } from "@material-ui/core";
 import React from "react";
 import Blogs from "../Blog/Blogs";
 import Nav from "../Shared/Nav/Nav";
-import Plants from "../Plants/Plants";
 import Simpleslider from "../Plants/Trees/Simpleslider";
 import Header from "./Banner/Header";
 import PlaceToVisit from "./Banner/PlaceToVisit";
