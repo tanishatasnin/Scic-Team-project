@@ -13,25 +13,13 @@ const Nav = () => {
                 <nav>
                     <div className="wrapper animate__backInDown">
                         <div className="logo"><Link to="/home">
-                            <img src={logo} alt="" width={85} /></Link></div>
+                            <img src={logo} alt="" width={80} /></Link></div>
                         <input type="radio" name="slider" id="menu-btn" />
                         <input type="radio" name="slider" id="close-btn" />
                         <ul className="nav-links">
                             <label for="close-btn" className="btn close-btn"><i className="fas fa-times"></i></label>
                             <li><Link to="/home">Home</Link></li>
                             <li><Link to="/trees">Products</Link></li>
-
-                            <li>
-                                <a href="#" className="desktop-item">Dropdown Menu</a>
-                                <input type="checkbox" id="showDrop" />
-                                <label for="showDrop" className="mobile-item">Dropdown Menu</label>
-                                <ul className="drop-menu">
-                                    <li><Link to="/galary">Gallery</Link></li>
-                                    <li><a href="#">Drop menu 2</a></li>
-                                    <li><a href="#">Drop menu 3</a></li>
-                                    <li>user.displayName</li>
-                                </ul>
-                            </li>
                             <li>
                                 <a href="#" className="desktop-item">Mega Menu</a>
                                 <input type="checkbox" id="showMega" />
@@ -44,7 +32,7 @@ const Nav = () => {
                                         <div className="row">
                                             <header>Design Services</header>
                                             <ul className="mega-links">
-                                                <li><a href="#">menu 1</a></li>
+                                                <li><Link to="/galary">Gallery</Link></li>
                                                 <li><a href="#">menu 2</a></li>
                                                 <li><a href="#">menu 3</a></li>
                                                 <li><a href="#">menu 3</a></li>
@@ -76,7 +64,21 @@ const Nav = () => {
                             <li><Link to="/contact">Contact</Link></li>
                             {
                                 user?.email ?
-                                    <li><Link to="/dashboard">Contact</Link></li>
+
+                                    <li>
+                                        <a href="#" className="desktop-item">{user.displayName}</a>
+                                        <input type="checkbox" id="showDrop" />
+                                        <label for="showDrop" className="mobile-item">{user.displayName}</label>
+                                        <ul className="drop-menu">
+                                            <li><Link to="/dashboard">Dashboard</Link></li>
+                                            <li><Link to="/galary">Gallery</Link></li>
+                                            <li><Link to="" onClick={logOut}>LogOut</Link></li>
+
+                                            <li><a href="#">Drop menu 2</a></li>
+                                            <li><a href="#">Drop menu 3</a></li>
+
+                                        </ul>
+                                    </li>
                                     :
                                     <li><Link to="/login">Login</Link></li>
                             }

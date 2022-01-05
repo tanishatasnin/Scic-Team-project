@@ -20,16 +20,15 @@ import Allproduct from "./Pages/Plants/Allproduct/Allproduct";
 import Plants from "./Pages/Plants/Plants";
 import SingleTree from "./Pages/Plants/Trees/SingleTree";
 import Trees from "./Pages/Plants/Trees/Trees";
-import Footer from "./Pages/Shared/Footer/Footer";
-import Nav from "./Pages/Shared/Nav/Nav";
 
 function App() {
   return (
     <div className="App">
       <AuthProvider>
         <BrowserRouter>
-          <Nav></Nav>
           <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -91,7 +90,7 @@ function App() {
 
             <Route path="/trees" element={<Trees />} />
           </Routes>
-          <Footer></Footer>
+
         </BrowserRouter>
       </AuthProvider>
     </div>
