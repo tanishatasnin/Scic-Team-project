@@ -14,7 +14,8 @@ const MyOrders = () => {
   console.log(email);
   const [userOrder, setUserOrder] = useState([]);
   useEffect(() => {
-    fetch("")
+    // +++ fetch by tanish ++++ 
+    fetch("https://boiling-forest-63211.herokuapp.com/customers/${user?.email")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
