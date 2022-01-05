@@ -43,7 +43,11 @@ function App() {
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/faq" element={<Faq />} />
             <Route path="/services/:productId" element={<Allproduct />} />
-            <Route path="/indoor-plants/:treeId" element={<SingleTree />} />
+            <Route path="/indoor-plants/:treeId" element={
+              <PrivateRoute>
+                <SingleTree />
+              </PrivateRoute>
+            } />
             <Route path="/blogs/:blogId" element={<SingleBlog />} />
             <Route
               path="/dashboard"
