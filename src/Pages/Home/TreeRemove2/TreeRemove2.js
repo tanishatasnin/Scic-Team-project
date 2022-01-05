@@ -1,7 +1,7 @@
 import React from "react";
-import "./TreeRemove2.css";
-import CountUp from 'react-countup';
+import CountUp from "react-countup";
 import { Fade } from "react-reveal";
+import "./TreeRemove2.css";
 
 const TreeRemove2 = () => {
   return (
@@ -16,7 +16,7 @@ const TreeRemove2 = () => {
                   width: "5%",
                   color: "black",
                   fontWeight: "bold",
-                  margin: "right",
+                  marginLeft: "95%",
                 }}
               />
               <h1 style={{ fontWeight: 360, fontSize: "50px" }}>
@@ -32,11 +32,15 @@ const TreeRemove2 = () => {
               </p>
               <div className="d-flex mb-3" style={{ marginLeft: "70%" }}>
                 <div>
-                  <h2 style={{ color: "#94da46" }}><CountUp end={20} duration={3} /> </h2>
+                  <h2 style={{ color: "#94da46" }}>
+                    <CountUp end={20} duration={3} />{" "}
+                  </h2>
                   <h4 style={{ fontWeight: "300" }}>Office</h4>
                 </div>
                 <div className="mx-5">
-                  <h2 style={{ color: "#94da46" }}><CountUp end={100} duration={5} />+</h2>
+                  <h2 style={{ color: "#94da46" }}>
+                    <CountUp end={100} duration={5} />+
+                  </h2>
                   <h4 style={{ fontWeight: "300" }}>Sellers</h4>
                 </div>
               </div>
@@ -54,7 +58,6 @@ const TreeRemove2 = () => {
           </div>
         </div>
       </Fade>
-
     </>
   );
 };

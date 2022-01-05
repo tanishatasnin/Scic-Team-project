@@ -6,7 +6,9 @@
 
 .tree2 img {
   margin-top: 60px;
+  margin-left: 40px;
   height: 600px;
+  width: 100%;
 }
 
 .tree2-info {

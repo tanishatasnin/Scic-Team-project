@@ -1,29 +1,27 @@
 import { CssBaseline, makeStyles } from "@material-ui/core";
 import React from "react";
 import Blogs from "../Blog/Blogs";
-import Nav from "../Shared/Nav/Nav";
+import Plants from "../Plants/Plants";
 import Simpleslider from "../Plants/Trees/Simpleslider";
+import Footer from "../Shared/Footer/Footer";
+import Nav from "../Shared/Nav/Nav";
 import Header from "./Banner/Header";
 import PlaceToVisit from "./Banner/PlaceToVisit";
+import SortingPlants from "./SortingPlants/SortingPlants";
 import TreeCount from "./TreeCount/TreeCount";
 import TreeRemove1 from "./TreeRemove1/TreeRemove1";
 import TreeRemove2 from "./TreeRemove2/TreeRemove2";
-import Footer from "../Shared/Footer/Footer";
-import Plants from "../Plants/Plants";
-
 
 function Home() {
-
   const useStyles = makeStyles((theme) => ({
     root: {
-      minHeight: '80vh',
+      minHeight: "80vh",
       backgroundImage: `url(https://i.ibb.co/qrqSTD6/angele-kamp-ONKFh-JGLv9k-unsplash.jpg)`,
-      backgroundRepeat: 'no-repeat',
-      backgroundSize: 'cover',
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "cover",
     },
   }));
   const classes = useStyles();
-
 
   return (
     <div>
@@ -41,8 +39,8 @@ function Home() {
       <TreeRemove2></TreeRemove2>
 
       <Blogs></Blogs>
+      <SortingPlants />
       <Simpleslider></Simpleslider>
-
 
       {/* footer add  */}
 
