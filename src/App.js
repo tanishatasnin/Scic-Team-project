@@ -29,7 +29,7 @@ function App() {
     <div className="App">
       <AuthProvider>
         <BrowserRouter>
-          <Nav></Nav>
+
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
@@ -93,7 +93,7 @@ function App() {
 
             <Route path="/trees" element={<Trees />} />
           </Routes>
-          <Footer></Footer>
+
         </BrowserRouter>
       </AuthProvider>
     </div>
