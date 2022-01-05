@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Faq from '../Faq/Faq';
+
 import Blog from './Blog';
 
 const Blogs = () => {
@@ -26,7 +26,8 @@ const Blogs = () => {
                                                                            ></Blog>)
                                                             }
                                              </div>
-                                             <Faq></Faq>
+                                             <br /><br /><br />
+
                               </div>
                );
 };
