@@ -22,6 +22,7 @@ import SingleTree from "./Pages/Plants/Trees/SingleTree";
 import Trees from "./Pages/Plants/Trees/Trees";
 import Footer from "./Pages/Shared/Footer/Footer";
 import Nav from "./Pages/Shared/Nav/Nav";
+import Faq from "./Pages/Faq/Faq";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
             <Route path="/register" element={<Register />} />
             <Route path="/services" element={<Plants />} />
             <Route path="/blogs" element={<Blogs />} />
+            <Route path="/faq" element={<Faq />} />
             <Route path="/services/:productId" element={<Allproduct />} />
             <Route path="/indoor-plants/:treeId" element={<SingleTree />} />
             <Route path="/blogs/:blogId" element={<SingleBlog />} />

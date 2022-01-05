@@ -1,6 +1,7 @@
 .img1-size{
                width: 300px;
                height: 300px;
+               border-radius: 5px;
                
 }
 .blog-texts{
@@ -10,4 +11,18 @@
                width: 70px;
                height: 70px;
                border-radius: 50%;
+}
+.bloger-img-home{
+               width: 50px;
+               height: 50px;
+               border-radius: 50%;
+}
+.more-details{
+               text-decoration: none;
+}
+.blog{
+               border: 4px solid gray;
+               
+               height: 460px;
+               
 }
