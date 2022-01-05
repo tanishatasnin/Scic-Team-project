@@ -7,91 +7,60 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import React, { useEffect, useState } from "react";
 import useAuth from "../../../hooks/useAuth";
-
+import './MyOrders.css'
 const MyOrders = () => {
   const { user } = useAuth();
-  const email = user.email;
-  console.log(email);
-  const [userOrder, setUserOrder] = useState([]);
+  const [myOrders, setMyOrders] = useState([]);
+  const [customers, setProducts] = useState([]);
   useEffect(() => {
-    // +++ fetch by tanish ++++ 
-    fetch("https://boiling-forest-63211.herokuapp.com/customers/${user?.email")
+    fetch(`http://localhost:5000/customers/${user?.email}`)
       .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-        setUserOrder(data);
-      });
-  }, []);
+      .then((data) => setMyOrders(data));
+  }, [user?.email, customers]);
 
-  const handleCancelOrder = (id) => {
-    const proceed = window.confirm("Are you really want to delete?");
-    if (proceed) {
-      const url = "";
-      fetch(url, {
-        method: "DELETE",
+  const handleDeleteCustomer = _id => {
+    const url = `http://localhost:5000/customers/${_id}`;
+    fetch(url, {
+      method: 'DELETE'
+    })
+      .then(res => res.json())
+      .then(data => {
+        console.log(data);
+        alert("DELETED");
+        const remaining = customers.filter(customer => customer._id !== _id);
+        setProducts(remaining);
       })
-        .then((res) => res.json())
-        .then((data) => {
-          if (data.deletedCount > 0) {
-            alert("Deleted Successfully");
-            const remainingOrder = userOrder.filter(
-              (orderCurrent) => orderCurrent._id !== id
-            );
-            setUserOrder(remainingOrder);
-          }
-        });
-    }
-  };
+  }
+
 
   return (
-    <div>
-      <h1>My total {userOrder.length} Orders</h1>
-      <TableContainer component={Paper}>
+
+    <div className="tabil-body">
+      <br /><br /><br />
+      <h2>My orders: {myOrders.length}</h2>
+      <TableContainer component={Paper} >
         <Table sx={{}} aria-label="Appointments table">
           <TableHead>
             <TableRow>
-              <TableCell>Email</TableCell>
-              <TableCell align="left">Product Name</TableCell>
-              <TableCell align="right">Price</TableCell>
-              <TableCell align="right">Image</TableCell>
-              <TableCell align="right">Phone</TableCell>
-              <TableCell align="right">Address</TableCell>
-              <TableCell align="right">Action</TableCell>
+              <TableCell>Name</TableCell>
+              <TableCell align="right">Email</TableCell>
+              <TableCell align="right">Product</TableCell>
+              <TableCell align="right">Number</TableCell>
             </TableRow>
           </TableHead>
-          <TableBody>
-            {userOrder.map((row) => (
+          <TableBody >
+            {myOrders.map((row) => (
               <TableRow
                 key={row._id}
-                sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+                sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
               >
                 <TableCell component="th" scope="row">
-                  {row.email}
+                  {row.customerName}
                 </TableCell>
-                <TableCell align="left">{row.name}</TableCell>
-
-                <TableCell align="right">{row.price}</TableCell>
-                <TableCell align="right">
-                  <img
-                    src={row.img}
-                    alt=""
-                    style={{
-                      width: "60%",
-                      height: "70px",
-                      borderRadius: "10%",
-                    }}
-                  />
-                </TableCell>
-                <TableCell align="right">{row.phone}</TableCell>
-                <TableCell align="right">{row.address}</TableCell>
-                <TableCell align="right">
-                  <button
-                    className="btn-delete"
-                    onClick={() => handleCancelOrder(row?._id)}
-                  >
-                    Cancel
-                  </button>
-                </TableCell>
+                <TableCell align="right">{row.customerEmail}</TableCell>
+                <TableCell align="right">{row.name}</TableCell>
+                <TableCell align="right">{row.number}</TableCell>
+                <button className='button-manage' onClick={() => handleDeleteCustomer(row._id)}>Delete</button>
               </TableRow>
             ))}
           </TableBody>
