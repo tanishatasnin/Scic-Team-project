@@ -14,11 +14,11 @@ const Plants = () => {
 
     return (
         < div >
-            <div>
+            <div className='mt-5 pt-2'>
 
-                <h1>OUR  <span className="The-Journal">plants</span></h1>
+                <h1>Our  <span className="The-Journal green-text"> Beautiful plants</span></h1>
             </div>
-            <div className="row row-cols-1 row-cols-md-3">
+            <div className="row row-cols-1 pt-5 row-cols-md-3">
                 {
                     plants.map(plant => <Plant
                         key={plant._id}

@@ -34,7 +34,7 @@ function Home() {
         <PlaceToVisit />
       </div>
       <TreeCount></TreeCount>
-      <Plants></Plants>
+      <div className="py-3"> <Plants></Plants></div>
       <TreeRemove1></TreeRemove1>
       <TreeRemove2></TreeRemove2>
 

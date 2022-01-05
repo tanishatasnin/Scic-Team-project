@@ -17,7 +17,7 @@ const Trees = () => {
             <Nav></Nav>
             <div>
                 <br /><br /><br /><br /><br />
-                <h1>Our  <span className="The-Journal">Plants</span></h1>
+                <h1>Our  <span className="The-Journal green-text">Plants</span></h1>
             </div>
             <div className="row row-cols-1 row-cols-md-3">
                 {
