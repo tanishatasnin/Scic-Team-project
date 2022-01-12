@@ -23,6 +23,8 @@ import Trees from "./Pages/Plants/Trees/Trees";
 import Footer from "./Pages/Shared/Footer/Footer";
 import Nav from "./Pages/Shared/Nav/Nav";
 import Faq from "./Pages/Faq/Faq"
+import Banner2 from "./Pages/Other-website/Banner2";
+import HomePart from "./Pages/Other-website/HomePart";
 
 function App() {
   return (
@@ -42,6 +44,8 @@ function App() {
             <Route path="/services" element={<Plants />} />
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/faq" element={<Faq />} />
+            <Route path="/ban" element={<Banner2 />} />
+            <Route path="/ban2" element={<HomePart />} />
             <Route path="/services/:productId" element={<Allproduct />} />
             <Route path="/indoor-plants/:treeId" element={
               <PrivateRoute>
